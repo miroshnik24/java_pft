@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-30T15:36:49" hostname="LAPTOP-6NF5C6OJ" time="1.255">
+<testsuite name="ru.stqa.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-30T16:17:43" hostname="LAPTOP-6NF5C6OJ" time="1.153">
   <properties/>
-  <testcase name="testGroupCreation" classname="ru.stqa.addressbook.GroupCreationTests" time="1.255"/>
+  <testcase name="testGroupCreation" classname="ru.stqa.addressbook.GroupCreationTests" time="1.153"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1667144201900	geckodriver	INFO	Listening on 127.0.0.1:14195
-1667144203289	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "24941" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:24941/,http://localhost:24941/,http://[::1]:24941/" "-no-remote" "-profile" "C:\\Users\\Tanya\\AppData\\Local\\Temp\\rust_mozprofilewSA0SZ"
-1667144203996	Marionette	INFO	Marionette enabled
-1667144204004	Marionette	INFO	Listening on port 60806
-Read port: 60806
-WebDriver BiDi listening on ws://127.0.0.1:24941
-1667144204197	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Tanya\\AppData\\Local\\Temp\\rust_mozprofilewSA0SZ\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:24941/devtools/browser/401bb2bd-4c87-405b-aac1-0e6bf2831144
+1667146656689	geckodriver	INFO	Listening on 127.0.0.1:20889
+1667146657780	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "10630" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:10630/,http://localhost:10630/,http://[::1]:10630/" "-no-remote" "-profile" "C:\\Users\\Tanya\\AppData\\Local\\Temp\\rust_mozprofileNvO1RQ"
+1667146658517	Marionette	INFO	Marionette enabled
+1667146658528	Marionette	INFO	Listening on port 50274
+Read port: 50274
+WebDriver BiDi listening on ws://127.0.0.1:10630
+1667146658719	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Tanya\\AppData\\Local\\Temp\\rust_mozprofileNvO1RQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:10630/devtools/browser/ab88be43-f9f3-4462-a00a-bd57c12482e6
 console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
-1667144210431	Marionette	INFO	Stopped listening on port 60806
-[Parent 8000, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1667146664465	Marionette	INFO	Stopped listening on port 50274
 ]]></system-err>
 </testsuite>
