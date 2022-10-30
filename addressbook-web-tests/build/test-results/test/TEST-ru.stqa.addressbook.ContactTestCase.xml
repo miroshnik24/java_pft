@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.addressbook.ContactTestCase" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-30T16:34:48" hostname="LAPTOP-6NF5C6OJ" time="4.941">
+  <properties/>
+  <testcase name="testContactTestCase" classname="ru.stqa.addressbook.ContactTestCase" time="4.941"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1667147682654	geckodriver	INFO	Listening on 127.0.0.1:21093
+1667147683699	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "10806" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:10806/,http://localhost:10806/,http://[::1]:10806/" "-no-remote" "-profile" "C:\\Users\\Tanya\\AppData\\Local\\Temp\\rust_mozprofileT5h9so"
+1667147684349	Marionette	INFO	Marionette enabled
+1667147684365	Marionette	INFO	Listening on port 61565
+Read port: 61565
+WebDriver BiDi listening on ws://127.0.0.1:10806
+1667147684687	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Tanya\\AppData\\Local\\Temp\\rust_mozprofileT5h9so\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:10806/devtools/browser/34d53fc5-da28-47d7-9d4b-d37a1c6891e2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+]]></system-err>
+</testsuite>
