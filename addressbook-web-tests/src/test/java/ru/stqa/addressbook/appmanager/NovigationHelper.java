@@ -4,14 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NovigationHelper extends HelperBase {
+public class NovigationHelper {
+  private FirefoxDriver wd;
   protected GroupHelper groupHelper;
 
   public NovigationHelper(FirefoxDriver wd) {
-    super(wd);
+    this.wd = wd;
   }
 
   public void gotoGroupPage() {
-    click(By.linkText("groups"));
+    groupHelper.wd.findElement(By.linkText("groups")).click();
   }
 }

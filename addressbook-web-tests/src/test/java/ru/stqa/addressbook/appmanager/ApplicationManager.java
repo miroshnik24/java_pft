@@ -14,6 +14,14 @@ public class ApplicationManager {
   private NovigationHelper novigationHelper;
   private GroupHelper groupHelper;
 
+  public static boolean isAlertPresent (FirefoxDriver wd) {
+    try {
+      wd.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e){
+      return false;
+    }
+  }
 
   public void init() {
     wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
@@ -33,8 +41,5 @@ public class ApplicationManager {
 
   public GroupHelper getGroupHelper() {
     return groupHelper;
-  }
-
-  public void gotoGroupPage() {
   }
 }
