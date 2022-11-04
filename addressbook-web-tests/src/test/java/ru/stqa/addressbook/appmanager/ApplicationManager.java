@@ -32,9 +32,19 @@ public class ApplicationManager {
     groupHelper = new GroupHelper(wd);
     novigationHelper = new NovigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
-    sessionHelper.login("admin", "secret");
+    login("admin", "secret");
   }
 
+  private void login(String username, String password) {
+    wd.findElement(By.name("user")).click();
+    wd.findElement(By.name("user")).clear();
+    wd.findElement(By.name("user")).sendKeys(username);
+    wd.findElement(By.name("pass")).click();
+    wd.findElement(By.name("pass")).clear();
+    wd.findElement(By.name("pass")).sendKeys(password);
+    wd.findElement(By.xpath("//input[@value='Login']")).click();
+    wd.findElement(By.xpath("//*/text()[normalize-space(.)='']/parent::*")).click();
+  }
 
   public void stop() {
     wd.quit();
