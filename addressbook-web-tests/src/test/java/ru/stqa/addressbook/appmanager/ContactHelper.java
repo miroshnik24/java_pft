@@ -25,7 +25,7 @@ public class ContactHelper {
     type(By.name("title"), contactData.getTitle());
     type(By.name("company"), contactData.getCompany());
     type(By.name("address"), contactData.getAddress());
-    click(By.name("theform"));
+  //  click(By.name("theform"));
     type(By.name("mobile"), contactData.getMobile());
     type(By.name("email"), contactData.getEmail());
   }
@@ -43,4 +43,23 @@ public class ContactHelper {
   private void click(By locator) {
     wd.findElement(locator).click();
   }
+
+
+//  public void selectContact() {
+//    click(By.name("selected[]"));
+//  }
+
+
+
+  public void submitContactModification() {
+    click(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public void submitContactModificationSave() {
+    click(By.xpath("//div[4]/form/input"));
+  }
+
+//  public void returnToHomePage() {
+//    click(By.linkText("home page"));
+//  }
 }
