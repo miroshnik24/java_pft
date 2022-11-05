@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.sandbox.EquationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-05T10:06:03" hostname="LAPTOP-6NF5C6OJ" time="0.013">
+<testsuite name="ru.stqa.pft.sandbox.EquationTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-05T10:21:31" hostname="LAPTOP-6NF5C6OJ" time="0.01">
   <properties/>
-  <testcase name="test0" classname="ru.stqa.pft.sandbox.EquationTests" time="0.009"/>
+  <testcase name="test0" classname="ru.stqa.pft.sandbox.EquationTests" time="0.007"/>
   <testcase name="test1" classname="ru.stqa.pft.sandbox.EquationTests" time="0.0"/>
   <testcase name="test2" classname="ru.stqa.pft.sandbox.EquationTests" time="0.0"/>
+  <testcase name="testConstant" classname="ru.stqa.pft.sandbox.EquationTests" time="0.0"/>
+  <testcase name="testLinear" classname="ru.stqa.pft.sandbox.EquationTests" time="0.0"/>
+  <testcase name="testZero" classname="ru.stqa.pft.sandbox.EquationTests" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
