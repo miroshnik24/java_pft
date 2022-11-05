@@ -45,10 +45,9 @@ public class ContactHelper {
   }
 
 
-//  public void selectContact() {
-//    click(By.name("selected[]"));
-//  }
-
+  public void selectContact() {
+    click(By.name("selected[]"));
+  }
 
 
   public void submitContactModification() {
@@ -57,6 +56,10 @@ public class ContactHelper {
 
   public void submitContactModificationSave() {
     click(By.xpath("//div[4]/form/input"));
+  }
+
+  public void deleteSelectedContact() {
+    click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
   }
 
 //  public void returnToHomePage() {
