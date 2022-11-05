@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="" />
+    <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +58,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2GqtL0sLGQI65U31Z2TNR8i8GHK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,7 +69,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Tanya/OneDrive/Документы/GitHub/java_pft/addressbook-web-tests/build.gradle",
+    "last_opened_file_path": "C:/Users/Tanya/OneDrive/Документы/GitHub/java_pft/sandbox/build.gradle",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -77,7 +82,7 @@
       <recent name="ru.stqa.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupDeletionTests (1)">
+  <component name="RunManager" selected="Gradle.EquationTests">
     <configuration name="ContactTestCase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -101,10 +106,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EquationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -114,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.addressbook.GroupCreationTests&quot;" />
+            <option value="&quot;ru.stqa.pft.sandbox.EquationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EquationTests" />
         <item itemvalue="Gradle.GroupDeletionTests (1)" />
         <item itemvalue="Gradle.addressbook-web-tests" />
         <item itemvalue="Gradle.GroupDeletionTests" />
         <item itemvalue="Gradle.ContactTestCase" />
-        <item itemvalue="Gradle.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
