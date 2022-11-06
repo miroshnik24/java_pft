@@ -32,7 +32,7 @@ public class ApplicationManager {
     } else if (browser.equals(BrowserType.EDGE)) {
       wd = new EdgeDriver();
     }
-    wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/");
     groupHelper = new GroupHelper(wd);
     novigationHelper = new NovigationHelper(wd);
@@ -42,23 +42,28 @@ public class ApplicationManager {
   }
 
   public void stop() {
+
     wd.quit();
   }
 
 
   public GroupHelper getGroupHelper() {
+
     return groupHelper;
   }
 
   public NovigationHelper getNovigationHelper() {
+
     return novigationHelper;
   }
 
   public ContactHelper getContactHelper() {
+
     return contactHelper;
   }
 
   public void switchTo() {
+
     wd.switchTo().alert().accept();
   }
 }
