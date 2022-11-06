@@ -1,15 +1,17 @@
 package ru.stqa.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelperBase {
 
-  public final FirefoxDriver wd;
+  public final WebDriver wd;
 
-  public HelperBase(FirefoxDriver wd) {
+  public HelperBase(WebDriver wd) {
     this.wd = wd;
   }
+
 
   protected void click(By locator) {
     wd.findElement(locator).click();
