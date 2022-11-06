@@ -5,10 +5,11 @@ import org.testng.annotations.BeforeMethod;
 import ru.stqa.addressbook.appmanager.ApplicationManager;
 
 import static org.openqa.selenium.remote.BrowserType.CHROME;
+import static org.openqa.selenium.remote.BrowserType.FIREFOX;
 
 public class TestBase {
 
-  protected final ApplicationManager app = new ApplicationManager(CHROME);
+  protected final ApplicationManager app = new ApplicationManager(FIREFOX);
 
   @BeforeMethod(alwaysRun = true)
   public void setUp() throws Exception {
