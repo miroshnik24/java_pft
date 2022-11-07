@@ -5,11 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.addressbook.model.ContactData;
 
-public class ContactHelper {
+public class ContactHelper extends HelperBase {
 
-  private WebDriver wd;
+  private final WebDriver wd;
 
   public ContactHelper(WebDriver wd) {
+    super(wd);
     this.wd = wd;
   }
 
@@ -31,7 +32,7 @@ public class ContactHelper {
     type(By.name("email"), contactData.getEmail());
   }
 
-  private void type(By locator, String text) {
+  public void type(By locator, String text) {
     click(locator);
     wd.findElement(locator).clear();
     wd.findElement(locator).sendKeys(text);
@@ -41,7 +42,7 @@ public class ContactHelper {
     click(By.linkText("add new"));
   }
 
-  private void click(By locator) {
+  public void click(By locator) {
     wd.findElement(locator).click();
   }
 
@@ -64,4 +65,14 @@ public class ContactHelper {
   }
 
 
+  public void createContact(ContactData contact) {
+    addContact();
+    fillContactFrom(contact);
+    addContactClick();
+  }
+
+  public boolean isThereAContact() {
+    return  isElementPresent(By.name("selected[]"));
+//    return false;
+  }
 }
