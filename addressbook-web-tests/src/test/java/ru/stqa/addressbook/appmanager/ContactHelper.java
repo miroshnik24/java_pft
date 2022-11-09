@@ -7,11 +7,11 @@ import ru.stqa.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
 
-  private final WebDriver wd;
+  private WebDriver wd;
 
   public ContactHelper(WebDriver wd) {
     super(wd);
-    this.wd = wd;
+ //   this.wd = wd;
   }
 
   public void addContactClick() {

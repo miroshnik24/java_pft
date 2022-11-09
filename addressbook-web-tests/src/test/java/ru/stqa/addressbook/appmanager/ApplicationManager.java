@@ -14,10 +14,9 @@ public class ApplicationManager {
   WebDriver wd;
 
   private ContactHelper contactHelper;
-  private SessionHelper sessionHelper;
   private NovigationHelper novigationHelper;
   private GroupHelper groupHelper;
-  private String browser;
+  private final String browser;
 
   public ApplicationManager(String browser) {
 
@@ -36,7 +35,7 @@ public class ApplicationManager {
     wd.get("http://localhost/addressbook/");
     groupHelper = new GroupHelper(wd);
     novigationHelper = new NovigationHelper(wd);
-    sessionHelper = new SessionHelper(wd);
+    SessionHelper sessionHelper = new SessionHelper(wd);
     contactHelper = new ContactHelper(wd);
     sessionHelper.login("admin", "secret");
   }
