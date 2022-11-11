@@ -7,7 +7,7 @@ import ru.stqa.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
 
-  private WebDriver wd;
+ // private WebDriver wd;
 
   public ContactHelper(WebDriver wd) {
     super(wd);
@@ -64,16 +64,16 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
   }
 
+  public void goToHomePage() {
+    click(By.linkText("home"));
+  }
 
   public void createContact(ContactData contact) {
-    goToHomePage();
+ //   goToHomePage();
     addContact();
     fillContactFrom(contact);
     addContactClick();
-  }
-
-  public void goToHomePage() {
-    click(By.linkText("home"));
+    goToHomePage();
   }
 
   public boolean isThereAContact() {
