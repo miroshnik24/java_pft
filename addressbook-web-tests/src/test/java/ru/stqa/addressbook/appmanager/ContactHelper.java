@@ -2,7 +2,6 @@ package ru.stqa.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
@@ -47,8 +46,8 @@ public class ContactHelper extends HelperBase {
   }
 
 
-  public void selectContact() {
-    click(By.name("selected[]"));
+  public void selectContact(int index) {
+    wd.findElements(By.name("selected[]")).get(index).click();
   }
 
 
@@ -77,7 +76,11 @@ public class ContactHelper extends HelperBase {
   }
 
   public boolean isThereAContact() {
-    return  isElementPresent(By.name("selected[]"));
+    return !isElementPresent(By.name("selected[]"));
 //    return false;
+  }
+
+  public int getContactCount() {
+    return wd.findElements(By.name("selected[]")).size();
   }
 }
