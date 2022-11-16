@@ -10,7 +10,7 @@ public class ContactDeletionTests extends TestBase {
 
   @Test (enabled = false)
   public void testContactDeletion() {
-    app.getNovigationHelper().goToHomePage();
+    app.goTo().goToHomePage();
     if (app.getContactHelper().isThereAContact()) {
       app.getContactHelper().createContact(new ContactData("Tatiana", "Vladimirovna", "Miroshnik", "tatiana", "Test"));
     }

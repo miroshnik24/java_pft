@@ -19,7 +19,6 @@ public class ApplicationManager {
   private final String browser;
 
   public ApplicationManager(String browser) {
-
     this.browser = browser;
   }
 
@@ -41,28 +40,23 @@ public class ApplicationManager {
   }
 
   public void stop() {
-
     wd.quit();
   }
 
 
-  public GroupHelper getGroupHelper() {
-
+  public GroupHelper group() {
     return groupHelper;
   }
 
-  public NovigationHelper getNovigationHelper() {
-
+  public NovigationHelper goTo() {
     return novigationHelper;
   }
 
   public ContactHelper getContactHelper() {
-
     return contactHelper;
   }
 
   public void switchTo() {
-
     wd.switchTo().alert().accept();
   }
 }
