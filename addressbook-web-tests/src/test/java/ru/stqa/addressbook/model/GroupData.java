@@ -51,6 +51,7 @@ public class GroupData {
     this.footer = footer;
     return this;
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -58,12 +59,15 @@ public class GroupData {
 
     GroupData groupData = (GroupData) o;
 
+    if (id != groupData.id) return false;
     return Objects.equals(name, groupData.name);
   }
 
   @Override
   public int hashCode() {
-    return name != null ? name.hashCode() : 0;
+    int result = id;
+    result = 31 * result + (name != null ? name.hashCode() : 0);
+    return result;
   }
 }
 
