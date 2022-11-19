@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.stqa.addressbook.model.ContactData;
 
+import javax.swing.text.TableView;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,8 +94,8 @@ public class ContactHelper extends HelperBase {
   }
 
   public List<ContactData> getContactList() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
-    List<WebElement> elements = wd.findElements(By.cssSelector("tr.odd"));
+    List<ContactData> contacts = new ArrayList<>();
+    List<WebElement> elements = wd.findElements(By.xpath("/html/body/div/div[4]/form[2]/table"));
     for (WebElement element : elements) {
       String firstname = element.getText();
       String lastname = element.getText();
