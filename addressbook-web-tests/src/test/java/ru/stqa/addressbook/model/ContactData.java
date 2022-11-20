@@ -3,36 +3,35 @@ package ru.stqa.addressbook.model;
 import java.util.Objects;
 
 public class ContactData {
-  private int id;
-  private final String firstname;
-  private final String middlename;
-  private final String lastname;
-  private final String nickname;
-  private final String title;
-//  private final String company;
-//  private final String address;
-//  private final String mobile;
-//  private final String email;
+  private int id = Integer.MAX_VALUE;
+  private String firstname;
+  private String middlename;
+  private String lastname;
+//  private String nickname;
+//  private String title;
 
   public int getId() {
     return id;
   }
-  public ContactData(String firstname, String middlename, String lastname, String nickname, String title) {
-    this.id = Integer.MAX_VALUE;
-    this.firstname = firstname;
-    this.middlename = middlename;
-    this.lastname = lastname;
-    this.nickname = nickname;
-    this.title = title;
+
+  public ContactData withId(int id) {
+    this.id = id;
+    return this;
   }
 
-  public ContactData(int id, String firstname, String middlename, String lastname, String nickname, String title) {
-    this.id = id;
+  public ContactData withFirstname(String firstname) {
     this.firstname = firstname;
+    return this;
+  }
+
+  public ContactData withMiddlename(String middlename) {
     this.middlename = middlename;
+    return this;
+  }
+
+  public ContactData withLastname(String lastname) {
     this.lastname = lastname;
-    this.nickname = nickname;
-    this.title = title;
+    return this;
   }
 
   public String getFirstname() {
@@ -47,13 +46,13 @@ public class ContactData {
     return lastname;
   }
 
-  public String getNickname() {
-    return nickname;
-  }
-
-  public String getTitle() {
-    return title;
-  }
+//  public String getNickname() {
+//    return nickname;
+//  }
+//
+//  public String getTitle() {
+//    return title;
+//  }
 
   @Override
   public String toString() {
@@ -82,7 +81,4 @@ public class ContactData {
     return result;
   }
 
-  public void setId(int id) {
-    this.id = id;
-  }
 }

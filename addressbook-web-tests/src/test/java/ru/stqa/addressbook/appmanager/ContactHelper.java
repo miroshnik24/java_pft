@@ -26,8 +26,8 @@ public class ContactHelper extends HelperBase {
     // wd.findElement(By.name("theform")).click();
     type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("lastname"), contactData.getLastname());
-    type(By.name("nickname"), contactData.getNickname());
-    type(By.name("title"), contactData.getTitle());
+//    type(By.name("nickname"), contactData.getNickname());
+//    type(By.name("title"), contactData.getTitle());
 //    type(By.name("company"), contactData.getCompany());
 //    type(By.name("address"), contactData.getAddress());
 //  //  click(By.name("theform"));
@@ -117,8 +117,7 @@ public class ContactHelper extends HelperBase {
       String firstname = element.getText();
       String lastname = element.getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      ContactData contact = new ContactData(id, firstname, null, lastname, null, null);
-      contacts.add(contact);
+      contacts.add(new ContactData().withId(id).withFirstname("Tatiana2").withLastname("Vladimirovna").withMiddlename("Miroshnik"));
     }
     return contacts;
   }
