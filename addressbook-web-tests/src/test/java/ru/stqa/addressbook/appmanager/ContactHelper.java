@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.stqa.addressbook.model.ContactData;
 
-import javax.swing.text.TableView;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,16 +71,34 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
   }
 
-  public void goToHomePage() {
+  public void homePage() {
     click(By.linkText("home"));
   }
 
-  public void createContact(ContactData contact) {
-    goToHomePage();
+  public void create(ContactData contact) {
+    homePage();
     addContact();
     fillContactFrom(contact);
     addContactClick();
-    goToHomePage();
+    homePage();
+  }
+
+  public void modify(int index, ContactData contact) {
+    selectContact(index);
+    selectContactModification(index);
+    fillContactFrom(contact);
+    submitContactModificationSave();
+    homePage();
+  }
+
+  public void delete(int index) {
+    selectContact(index);
+    deleteSelectedContact();
+    switchTo();
+  }
+
+  public void switchTo() {
+    wd.switchTo().alert().accept();
   }
 
   public boolean isThereAContact() {
@@ -93,7 +110,7 @@ public class ContactHelper extends HelperBase {
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactData> getContactList() {
+  public List<ContactData> list() {
     List<ContactData> contacts = new ArrayList<>();
     List<WebElement> elements = wd.findElements(By.xpath("//html/body/div/div[4]/form[2]/table/tbody/tr[2]"));
     for (WebElement element : elements) {
