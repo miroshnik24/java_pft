@@ -52,11 +52,11 @@ public class ContactHelper extends HelperBase {
   }
 
   public void selectContactById(int id) {
-    wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+    wd.findElement(By.xpath("//td/input")).click();;
   }
 
-  public void selectContactModification(int index) {
-    wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
+  public void selectContactModification(int id) {
+    wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td['" + id+ "']/a/img")).click();
   }
 
   public void submitContactModification(int i) {
@@ -68,7 +68,7 @@ public class ContactHelper extends HelperBase {
   }
 
   public void deleteSelectedContact() {
-    click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+    click(By.xpath("input[@value='Delete']"));
   }
 
   public void homePage() {
@@ -112,12 +112,13 @@ public class ContactHelper extends HelperBase {
 
   public Contacts all() {
     Contacts contacts = new Contacts();
-    List<WebElement> elements = wd.findElements(By.xpath("//html/body/div/div[4]/form[2]/table/tbody/tr[2]"));
+    List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
       String firstname = element.getText();
       String lastname = element.getText();
+      String middlename = element.getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      contacts.add(new ContactData().withId(id).withFirstname("Tatiana2").withLastname("Vladimirovna").withMiddlename("Miroshnik"));
+      contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withMiddlename(middlename));
     }
     return contacts;
   }
