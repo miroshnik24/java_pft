@@ -26,7 +26,7 @@ public class ContactHelper extends HelperBase {
   public void fillContactFrom(ContactData contactData) {
     type(By.name("firstname"), contactData.getFirstname());
     // wd.findElement(By.name("theform")).click();
-    type(By.name("middlename"), contactData.getMiddlename());
+   // type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("lastname"), contactData.getLastname());
 //    type(By.name("nickname"), contactData.getNickname());
 //    type(By.name("title"), contactData.getTitle());
@@ -52,11 +52,11 @@ public class ContactHelper extends HelperBase {
   }
 
   public void selectContactById(int id) {
-    wd.findElement(By.xpath("//td/input")).click();;
+    wd.findElement(By.xpath("//input[@id='" + id+ "']")).click();
   }
 
   public void selectContactModification(int id) {
-    wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td['" + id+ "']/a/img")).click();
+    wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr['" + id+ "']/td[8]/a/img")).click();
   }
 
   public void submitContactModification(int i) {
@@ -68,7 +68,7 @@ public class ContactHelper extends HelperBase {
   }
 
   public void deleteSelectedContact() {
-    click(By.xpath("input[@value='Delete']"));
+    click(By.xpath("//input[@value='Delete']"));
   }
 
   public void homePage() {
@@ -115,10 +115,12 @@ public class ContactHelper extends HelperBase {
     List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
       String firstname = element.getText();
+      //String middlename = element.getText();
       String lastname = element.getText();
-      String middlename = element.getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withMiddlename(middlename));
+      contacts.add(new ContactData().withId(id).withFirstname(firstname)
+              //.withMiddlename(middlename)
+              .withLastname(lastname));
     }
     return contacts;
   }

@@ -9,7 +9,14 @@ public class ContactData {
   private String lastname;
 //  private String nickname;
 //  private String title;
-
+@Override
+public String toString() {
+  return "ContactData{" +
+          "id='" + id + '\'' +
+          ", firstname='" + firstname + '\'' +
+          ", lastname='" + lastname + '\'' +
+          '}';
+}
   public int getId() {
     return id;
   }
@@ -54,14 +61,6 @@ public class ContactData {
 //    return title;
 //  }
 
-  @Override
-  public String toString() {
-    return "ContactData{" +
-            "id='" + id + '\'' +
-            ", firstname='" + firstname + '\'' +
-            ", lastname='" + lastname + '\'' +
-            '}';
-  }
 
   @Override
   public boolean equals(Object o) {
@@ -72,7 +71,7 @@ public class ContactData {
 
     if (id != that.id) return false;
     if (!Objects.equals(firstname, that.firstname)) return false;
-    if (!Objects.equals(middlename, that.middlename)) return false;
+    if (!Objects.equals(lastname, that.lastname)) return false;
     return Objects.equals(lastname, that.lastname);
   }
 
@@ -80,7 +79,6 @@ public class ContactData {
   public int hashCode() {
     int result = id;
     result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-    result = 31 * result + (middlename != null ? middlename.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     return result;
   }
