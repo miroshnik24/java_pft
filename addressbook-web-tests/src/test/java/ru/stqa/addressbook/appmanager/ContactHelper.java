@@ -51,12 +51,12 @@ public class ContactHelper extends HelperBase {
     wd.findElement(locator).click();
   }
 
-  public void selectContactById(int id) {
-    wd.findElement(By.xpath("//input[@id='" + id+ "']")).click();
+  public void selectContactById(int locator) {
+    wd.findElement(By.xpath("//input[@id=" + locator+ "]")).click();
   }
 
-  public void selectContactModification(int id) {
-    wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr['" + id+ "']/td[8]/a/img")).click();
+  public void selectContactModification(int locator) {
+    wd.findElement(By.xpath("//td["+ locator+ "]/a/img")).click();
   }
 
   public void submitContactModification(int i) {
