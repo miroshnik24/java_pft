@@ -7,7 +7,11 @@ public class ContactData {
   private String firstname;
   private String middlename;
   private String lastname;
-//  private String nickname;
+  private String home;
+  private String mobile;
+  private String work;
+
+  //  private String nickname;
 //  private String title;
 @Override
 public String toString() {
@@ -53,13 +57,20 @@ public String toString() {
     return lastname;
   }
 
-//  public String getNickname() {
-//    return nickname;
-//  }
-//
-//  public String getTitle() {
-//    return title;
-//  }
+  public ContactData withHomePhone(String home) {
+    this.home = home;
+    return this;
+  }
+
+  public ContactData withMobilePhone(String mobile) {
+    this.mobile = mobile;
+    return this;
+  }
+
+  public ContactData withWorkPhone(String work) {
+    this.work = work;
+    return this;
+  }
 
 
   @Override
