@@ -45,6 +45,33 @@ public String toString() {
     return this;
   }
 
+  public String getHomePhone() {
+    return home;
+  }
+
+  public ContactData withHomePhone(String home) {
+    this.home = home;
+    return this;
+  }
+
+  public String getMobilePhone() {
+    return mobile;
+  }
+
+  public ContactData withMobilePhone(String mobile) {
+    this.mobile = mobile;
+    return this;
+  }
+
+  public String getWorkPhone() {
+    return work;
+  }
+
+  public ContactData withWorkPhone(String work) {
+    this.work = work;
+    return this;
+  }
+
   public String getFirstname() {
     return firstname;
   }
@@ -57,20 +84,6 @@ public String toString() {
     return lastname;
   }
 
-  public ContactData withHomePhone(String home) {
-    this.home = home;
-    return this;
-  }
-
-  public ContactData withMobilePhone(String mobile) {
-    this.mobile = mobile;
-    return this;
-  }
-
-  public ContactData withWorkPhone(String work) {
-    this.work = work;
-    return this;
-  }
 
 
   @Override

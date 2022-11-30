@@ -126,8 +126,10 @@ public class ContactHelper extends HelperBase {
       int id = Integer.parseInt(contactData.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String lastname = contactData.get(1).getText();
       String firstname = contactData.get(2).getText();
-     // int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname);
+      String[] phones = contactData.get(5).getText().split("\n");
+      // int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
+              .withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]);
               //withMiddlename(middlename)
 
       contacts.add(contact);
@@ -136,7 +138,7 @@ public class ContactHelper extends HelperBase {
   }
 
   public ContactData infoFromEditForm(ContactData contact) {
-    selectContactById(contact.getId());
+    submitContactModification(contact.getId());
     String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
     String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
     String home = wd.findElement(By.name("home")).getAttribute("value");
