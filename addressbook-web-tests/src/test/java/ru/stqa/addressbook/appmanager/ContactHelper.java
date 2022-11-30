@@ -126,10 +126,10 @@ public class ContactHelper extends HelperBase {
       int id = Integer.parseInt(contactData.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String lastname = contactData.get(1).getText();
       String firstname = contactData.get(2).getText();
-      String[] phones = contactData.get(5).getText().split("\n");
+      String AllPhones = contactData.get(5).getText();
       // int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
       ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
-              .withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]);
+              .withAllPhones(AllPhones);
               //withMiddlename(middlename)
 
       contacts.add(contact);
