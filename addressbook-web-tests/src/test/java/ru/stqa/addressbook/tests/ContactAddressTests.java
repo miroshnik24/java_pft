@@ -9,26 +9,22 @@ import java.util.stream.Collectors;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ContactEmailTests extends TestBase {
+public class ContactAddressTests extends TestBase{
 
   @Test
-  public void testContactEmail() {
+  public void testContactAddress() {
     app.goTo().goToHomePage();
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 
-    assertThat(contact.getAllEmail(), equalTo(mergeEmail(contactInfoFromEditForm)));
+    assertThat(contact.getAllAddress(), equalTo(mergeAddress(contactInfoFromEditForm)));
 
   }
 
-  public  <T> String mergeEmail(ContactData contact) {
-    return Arrays.asList(contact.getEmail(), contact.getEmail2(),contact.getEmail3())
+  public  <T> String mergeAddress(ContactData contact) {
+    return Arrays.asList(contact.getAddress(), contact.getAddress2())
             .stream().filter((s) -> ! s.equals(""))
-            .map(ContactEmailTests::cleanedEmail)
             .collect(Collectors.joining("\n"));
   }
-
-  public static String cleanedEmail(String email) {
-    return email.replaceAll("\\s", "").replaceAll("[-()]", "");
-  }
+  
 }
