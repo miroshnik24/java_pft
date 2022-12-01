@@ -11,6 +11,10 @@ public class ContactData {
   private String mobilePhone;
   private String workPhone;
   private String allPhones;
+  private String Email;
+  private String Email2;
+  private String Email3;
+  private String allEmail;
 
   //  private String nickname;
 //  private String title;
@@ -91,6 +95,42 @@ public String toString() {
 
   public ContactData withAllPhones(String allPhones) {
     this.allPhones = allPhones;
+    return this;
+  }
+
+  public String getEmail() {
+    return Email;
+  }
+
+  public ContactData withEmail(String email) {
+    Email = email;
+    return this;
+  }
+
+  public String getEmail2() {
+    return Email2;
+  }
+
+  public ContactData withEmail2(String email2) {
+    Email2 = email2;
+    return this;
+  }
+
+  public String getEmail3() {
+    return Email3;
+  }
+
+  public ContactData withEmail3(String email3) {
+    Email3 = email3;
+    return this;
+  }
+
+  public String getAllEmail() {
+    return allEmail;
+  }
+
+  public ContactData withAllEmail(String allEmail) {
+    this.allEmail = allEmail;
     return this;
   }
 
