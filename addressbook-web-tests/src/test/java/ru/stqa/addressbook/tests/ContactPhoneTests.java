@@ -1,5 +1,6 @@
 package ru.stqa.addressbook.tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.addressbook.model.ContactData;
 
@@ -11,18 +12,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactPhoneTests extends TestBase{
 
-  @Test
-  public void testContactPhones() {
+  @BeforeMethod
+  public void ensurePreconditions(){
     app.goTo().goToHomePage();
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
-
     assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditForm)));
-
   }
 
+  @Test
+
   private <T> String mergePhones(ContactData contact) {
-    return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(),contact.getWorkPhone())
+    return Arrays.asList(contact.getHomePhone(), contact.getHomePhone2(), contact.getMobilePhone(),contact.getWorkPhone())
             .stream().filter((s) -> ! s.equals(""))
             .map(ContactPhoneTests::cleaned)
             .collect(Collectors.joining("\n"));

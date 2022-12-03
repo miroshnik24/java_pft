@@ -8,6 +8,7 @@ public class ContactData {
   private String middlename;
   private String lastname;
   private String homePhone;
+  private String homePhone2;
   private String mobilePhone;
   private String workPhone;
   private String allPhones;
@@ -16,7 +17,6 @@ public class ContactData {
   private String email3;
   private String allEmail;
   private String address;
-  private String address2;
   private String allAddress;
 
   //  private String nickname;
@@ -59,6 +59,15 @@ public String toString() {
 
   public ContactData withHomePhone(String home) {
     this.homePhone = home;
+    return this;
+  }
+
+  public String getHomePhone2() {
+    return homePhone2;
+  }
+
+  public ContactData withHomePhone2(String homePhone2) {
+    this.homePhone2 = homePhone2;
     return this;
   }
 
@@ -146,15 +155,6 @@ public String toString() {
     return this;
   }
 
-  public String getAddress2() {
-    return address2;
-  }
-
-  public ContactData withAddress2(String address2) {
-    this.address2 = address2;
-    return this;
-  }
-
   public String getAllAddress() {
     return allAddress;
   }
@@ -184,4 +184,6 @@ public String toString() {
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     return result;
   }
+
+
 }
