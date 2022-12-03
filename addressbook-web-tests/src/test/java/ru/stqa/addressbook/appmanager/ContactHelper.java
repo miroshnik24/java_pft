@@ -23,16 +23,9 @@ public class ContactHelper extends HelperBase {
 
   public void fillContactFrom(ContactData contactData, boolean b) {
     type(By.name("firstname"), contactData.getFirstname());
-    // wd.findElement(By.name("theform")).click();
    // type(By.name("middlename"), contactData.getMiddlename());
     type(By.name("lastname"), contactData.getLastname());
-//    type(By.name("nickname"), contactData.getNickname());
-//    type(By.name("title"), contactData.getTitle());
-//    type(By.name("company"), contactData.getCompany());
-//    type(By.name("address"), contactData.getAddress());
-//  //  click(By.name("theform"));
-//    type(By.name("mobile"), contactData.getMobile());
-//    type(By.name("email"), contactData.getEmail());
+    attach(By.name("photo"), contactData.getPhoto());
   }
 
   public void type(By locator, String text) {
@@ -48,7 +41,6 @@ public class ContactHelper extends HelperBase {
   public void click(By locator) {
     wd.findElement(locator).click();
   }
-
 
   public void selectContactById(int id)
   {
