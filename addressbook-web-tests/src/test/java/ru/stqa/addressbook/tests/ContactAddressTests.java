@@ -6,13 +6,14 @@ import ru.stqa.addressbook.model.ContactData;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactAddressTests extends TestBase{
 
-  @BeforeMethod
+  @BeforeMethod (enabled = false)
   public void ensurePreconditions(){
     app.goTo().goToHomePage();
     ContactData contact = app.contact().all().iterator().next();
@@ -20,11 +21,9 @@ public class ContactAddressTests extends TestBase{
     assertThat(contact.getAllAddress(), equalTo(mergeAddress(contactInfoFromEditForm)));
   }
 
-  @Test
-
+  @Test (enabled = false)
   public  <T> String mergeAddress(ContactData contact) {
-    return Arrays.asList(contact.getAddress())
-            .stream().filter((s) -> ! s.equals(""))
+    return Stream.of(contact.getAddress()).filter((s) -> !s.equals(""))
             .collect(Collectors.joining("\n"));
   }
   

@@ -11,16 +11,16 @@ import java.util.stream.Stream;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ContactPhoneTests extends TestBase{
+public class ContactCheck extends TestBase{
 
-  @BeforeMethod (enabled = false)
+  @BeforeMethod
   public void ensurePreconditions(){
     app.goTo().goToHomePage();
     ContactData contact = app.contact().all().iterator().next();
     //ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
   }
 
-  @Test (enabled = false)
+  @Test
   public  <T> String mergePhones(ContactData contact) {
     assertThat(contact.getAllPhones(), equalTo(mergePhones(app.contact().infoFromEditForm(contact))));
     return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(),contact.getWorkPhone(),contact.getHomePhone2())
