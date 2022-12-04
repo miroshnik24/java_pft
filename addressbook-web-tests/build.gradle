@@ -9,6 +9,7 @@ dependencies {
     implementation 'com.slickqa:testng:7.0.0-7'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.0'
     implementation 'org.hamcrest:hamcrest-junit:2.0.0.0'
+    implementation 'com.beust:jcommander:1.82'
 }
 
 
