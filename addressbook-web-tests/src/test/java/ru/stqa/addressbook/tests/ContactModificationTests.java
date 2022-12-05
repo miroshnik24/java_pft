@@ -24,8 +24,8 @@ public class ContactModificationTests extends TestBase {
   public void testContactModification() {
     Contacts before = app.contact().all();
     ContactData modifiedContact = before.iterator().next();
-    ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstname("Tatiana1")
-            .withMiddlename("Vladimirovna2").withLastname("Miroshnik3");
+    ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstname("test1")
+            .withLastname("test2").withMobilePhone("9999999").withAddress("Address3");
     app.contact().modify(contact);
     Contacts after = app.contact().all();
     assertThat(after.size(), equalTo(before.size()));

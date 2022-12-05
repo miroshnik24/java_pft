@@ -93,7 +93,6 @@ public class ContactHelper extends HelperBase {
     selectContactById(contact.getId());
     submitContactModification(contact.getId());
     fillContactFrom(contact, false);
-   // fillContactFrom(contact, false);
     submitContactModificationSave();
     homePage();
   }
