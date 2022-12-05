@@ -90,10 +90,7 @@ public class ContactCreationTests extends TestBase {
   {
     app.goTo().goToHomePage();
     Contacts before = app.contact().all();
-//    ensurePreconditions(contact.getGroupName());
-//    app.goTo().newContactPage();
     app.contact().create(contact);
-    //app.goTo().homePage();
     Contacts after = app.contact().all();
     assertThat(after.size(), equalTo(before.size() + 1));
 
