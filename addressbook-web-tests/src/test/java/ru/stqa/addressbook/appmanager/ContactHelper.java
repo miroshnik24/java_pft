@@ -128,10 +128,10 @@ public class ContactHelper extends HelperBase {
       String firstname = contactData.get(2).getText();
       String allPhones = contactData.get(5).getText();
       String allEmail = contactData.get(4).getText();
-      String allAddress = contactData.get(3).getText();
+      String address = contactData.get(3).getText();
       // int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
       ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
-              .withAllPhones(allPhones).withAllEmail(allEmail).withAllAddress(allAddress);
+              .withAllPhones(allPhones).withAllEmail(allEmail).withAllAddress(address);
               //withMiddlename(middlename)
 
       contacts.add(contact);
