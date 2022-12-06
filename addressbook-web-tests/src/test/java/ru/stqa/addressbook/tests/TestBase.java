@@ -1,5 +1,6 @@
 package ru.stqa.addressbook.tests;
 
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import ru.stqa.addressbook.appmanager.ApplicationManager;
@@ -7,8 +8,7 @@ import ru.stqa.addressbook.appmanager.ApplicationManager;
 import static org.openqa.selenium.remote.BrowserType.FIREFOX;
 
 public class TestBase {
-
-  protected static final ApplicationManager app = new ApplicationManager(FIREFOX);
+  protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", FIREFOX));
 
   @BeforeSuite(alwaysRun = true)
   public void setUp() throws Exception {

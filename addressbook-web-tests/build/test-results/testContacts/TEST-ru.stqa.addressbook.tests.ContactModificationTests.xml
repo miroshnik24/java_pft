@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.addressbook.tests.ContactModificationTests" tests="1" skipped="1" failures="0" errors="0" timestamp="2022-12-06T15:19:42" hostname="LAPTOP-6NF5C6OJ" time="0.0">
+  <properties/>
+  <testcase name="testContactModification" classname="ru.stqa.addressbook.tests.ContactModificationTests" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
