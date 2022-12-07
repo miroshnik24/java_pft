@@ -63,6 +63,7 @@ public class ContactData {
   private String address;
   @Transient
   private String allAddress;
+
   @Column(name = "photo")
   @Type(type = "text")
   private String photo;
@@ -211,13 +212,16 @@ public String toString() {
     return this;
   }
 
-  public File getPhoto() {
-    return new File(photo);
-  }
-
-  public ContactData withPhoto(File photo) {
-    this.photo = photo.getPath();
-    return this;
+  public File getPhoto()
+  {
+    if(photo == null)
+    {
+      return null;
+    }
+    else
+    {
+      return new File(photo);
+    }
   }
 
   @Override
@@ -228,9 +232,8 @@ public String toString() {
     ContactData that = (ContactData) o;
 
     if (id != that.id) return false;
-    if (!Objects.equals(firstname, that.firstname)) return false;
-    if (!Objects.equals(lastname, that.lastname)) return false;
-    return Objects.equals(lastname, that.lastname);
+    if (!Objects.equals( firstname, that.firstname )) return false;
+    return Objects.equals( lastname, that.lastname );
   }
 
   @Override
@@ -239,6 +242,19 @@ public String toString() {
     result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     return result;
+  }
+
+  public ContactData withPhoto(File photo)
+  {
+    if(photo == null)
+    {
+      this.photo = null;
+    }
+    else
+    {
+      this.photo = photo.getPath();
+    }
+    return this;
   }
 
 

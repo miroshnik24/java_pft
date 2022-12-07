@@ -2,7 +2,6 @@ package ru.stqa.addressbook.tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.stqa.addressbook.appmanager.ContactHelper;
 import ru.stqa.addressbook.model.ContactData;
 
 import java.util.Arrays;
@@ -16,7 +15,7 @@ public class ContactCheck extends TestBase{
 
   @BeforeMethod
   public void ensurePreconditions(){
-    app.goTo().goToHomePage();
+    app.goTo().homePage();
 //    ContactData contact = app.contact().all().iterator().next();
 //    ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
   }
