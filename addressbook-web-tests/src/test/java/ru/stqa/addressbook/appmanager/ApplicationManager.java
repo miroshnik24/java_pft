@@ -48,6 +48,23 @@ public class ApplicationManager {
     sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
   }
 
+//  public void init() {
+//    if (browser.equals(BrowserType.FIREFOX)) {
+//      wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
+//    } else if (browser.equals(BrowserType.CHROME)) {
+//      wd = new ChromeDriver(new ChromeOptions().setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe"));
+//    } else if (browser.equals(BrowserType.EDGE)) {
+//      wd = new EdgeDriver();
+//    }
+//    wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//    wd.get("http://localhost/addressbook");
+//    groupHelper = new GroupHelper(wd);
+//    novigationHelper = new NovigationHelper(wd);
+//    SessionHelper sessionHelper = new SessionHelper(wd);
+//    contactHelper = new ContactHelper(wd);
+//    sessionHelper.login("admin", "secret");
+//  }
+
   public void stop() {
     wd.quit();
   }

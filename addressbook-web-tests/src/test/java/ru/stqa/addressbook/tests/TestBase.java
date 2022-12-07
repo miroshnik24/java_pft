@@ -15,7 +15,7 @@ import java.util.Arrays;
 import static org.openqa.selenium.remote.BrowserType.FIREFOX;
 
 public class TestBase {
-  Logger logger = LoggerFactory.getLogger(TestBase.class);
+  //Logger logger = LoggerFactory.getLogger(TestBase.class);
 
   protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", FIREFOX));
 
@@ -29,13 +29,13 @@ public class TestBase {
     app.stop();
   }
 
-  @BeforeMethod
-  public void logTestStart(Method m, Object[] p) {
-    logger.info("Start test "+ m.getName()+ " with parameters "+ Arrays.asList(p));
-  }
-
-  @AfterMethod(alwaysRun = true)
-  public void logTestStop(Method m, Object[] p) {
-    logger.info("Stop test "+ m.getName() + " with parameters "+ Arrays.asList(p));
-  }
+//  @BeforeMethod
+//  public void logTestStart(Method m, Object[] p) {
+//    logger.info("Start test "+ m.getName()+ " with parameters "+ Arrays.asList(p));
+//  }
+//
+//  @AfterMethod(alwaysRun = true)
+//  public void logTestStop(Method m, Object[] p) {
+//    logger.info("Stop test "+ m.getName() + " with parameters "+ Arrays.asList(p));
+//  }
 }
