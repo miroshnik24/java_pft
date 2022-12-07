@@ -38,31 +38,31 @@ public class HbConnectionTest
     }
   }
 
-  @Test
-  public void testHbConnectionithGroupData()
-  {
-    Session session = sessionFactory.openSession();
-    session.beginTransaction();
-    List<GroupData> result = session.createQuery("from GroupData").list();
-    for (GroupData group : result)
-    {
-      System.out.println(group);
-    }
-    session.getTransaction().commit();
-    session.close();
-  }
-
 //  @Test
-//  public void testHbConnectionithContactData()
+//  public void testHbConnectionithGroupData()
 //  {
 //    Session session = sessionFactory.openSession();
 //    session.beginTransaction();
-//    List<ContactData> result = session.createQuery("from ContactData where deprecated = '0000-00-00'").list();
-//    for (ContactData group : result)
+//    List<GroupData> result = session.createQuery("from GroupData").list();
+//    for (GroupData group : result)
 //    {
 //      System.out.println(group);
 //    }
 //    session.getTransaction().commit();
 //    session.close();
 //  }
+
+  @Test
+  public void testHbConnectionithContactData()
+  {
+    Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    List<ContactData> result = session.createQuery("from ContactData where deprecated = '0000-00-00'").list();
+    for (ContactData group : result)
+    {
+      System.out.println(group);
+    }
+    session.getTransaction().commit();
+    session.close();
+  }
 }
