@@ -3,6 +3,7 @@ package ru.stqa.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import ru.stqa.addressbook.model.ContactData;
 import ru.stqa.addressbook.model.Contacts;
 
@@ -63,7 +64,6 @@ public class ContactHelper extends HelperBase {
       }
     }
   }
-
   public void submitContactModification(int id)
   {
     wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))). click();
@@ -79,6 +79,30 @@ public class ContactHelper extends HelperBase {
 
   public void homePage() {
     click(By.linkText("home"));
+  }
+
+  private void chooseGroup(){
+    click(By.name("to_group"));
+    new Select(wd.findElement(By.name("to_group"))).selectByIndex(0);
+    //wd.findElement(By.cssSelector("option[value=\"" +id+"\"]")).click();
+  }
+  private void selectGroup(){
+    click(By.name("group"));
+    new Select(wd.findElement(By.name("group"))).selectByVisibleText("[all]");
+    new Select(wd.findElement(By.name("group"))).selectByIndex(2);
+  }
+  public void contactToGroup(ContactData contact){
+    selectContactById(contact.getId());
+    chooseGroup();
+    addContactToGroup();
+    goToAddedGroup();
+
+  }
+  private void addContactToGroup(){
+    click(By.name("add"));
+  }
+  private void goToAddedGroup(){
+    click(By.partialLinkText("group page"));
   }
 
   public void create(ContactData contact) {
@@ -103,7 +127,15 @@ public class ContactHelper extends HelperBase {
     //switchTo();
   }
 
-
+  private void submitRemove(){
+    click(By.name("remove"));
+  }
+  public void removeContactFromGroup(ContactData contact){
+    selectGroup();
+    selectContactById(contact.getId());
+    submitRemove();
+    goToAddedGroup();
+  }
   public void switchTo() {
     wd.switchTo().alert().accept();
   }
@@ -113,7 +145,7 @@ public class ContactHelper extends HelperBase {
 //    return false;
   }
 
-  public int getContactCount() {
+  public int count() {
     return wd.findElements(By.name("selected[]")).size();
   }
 
