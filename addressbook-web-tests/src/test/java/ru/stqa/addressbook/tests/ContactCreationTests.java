@@ -20,7 +20,8 @@ import static org.hamcrest.junit.MatcherAssert.assertThat;
 
 public class ContactCreationTests extends TestBase {
 
-  private ContactData contact;
+  //private ContactData contact;
+
 //
 //  @DataProvider
 //  public Iterator<Object[]> validContactsFromJson() throws IOException {
