@@ -1,0 +1,110 @@
+<list>
+  <contact>
+    <firstName>First name 0</firstName>
+    <middleName>Middle name 0</middleName>
+    <lastName>Last name 0</lastName>
+    <nickname>Nickname 0</nickname>
+    <title>Title 0</title>
+    <company>Company 0</company>
+    <address>Address 0</address>
+    <homePhone>Home phone 0</homePhone>
+    <mobilePhone>Mobile phone 0</mobilePhone>
+    <workPhone>Work phone 0</workPhone>
+    <fax>Fax 0</fax>
+    <email>0@0.ru</email>
+    <email2>0@0.2ru</email2>
+    <email3>0@0.3ru</email3>
+    <homepage>Homepage 0</homepage>
+    <dayOfBirthday>1</dayOfBirthday>
+    <monthOfBirthday>January</monthOfBirthday>
+    <yearOfBirthday>0</yearOfBirthday>
+    <dayOfAnniversary>2</dayOfAnniversary>
+    <monthOfAnniversary>February</monthOfAnniversary>
+    <yearOfAnniversary>0</yearOfAnniversary>
+    <groupName>Group</groupName>
+    <address2>Secondary address 0</address2>
+    <phone2>Secondary phone 0</phone2>
+    <notes>Notes 0</notes>
+  </contact>
+  <contact>
+    <firstName>First name 1</firstName>
+    <middleName>Middle name 1</middleName>
+    <lastName>Last name 1</lastName>
+    <nickname>Nickname 1</nickname>
+    <title>Title 1</title>
+    <company>Company 1</company>
+    <address>Address 1</address>
+    <homePhone>Home phone 1</homePhone>
+    <mobilePhone>Mobile phone 1</mobilePhone>
+    <workPhone>Work phone 1</workPhone>
+    <fax>Fax 1</fax>
+    <email>1@1.ru</email>
+    <email2>1@1.2ru</email2>
+    <email3>1@1.3ru</email3>
+    <homepage>Homepage 1</homepage>
+    <dayOfBirthday>1</dayOfBirthday>
+    <monthOfBirthday>January</monthOfBirthday>
+    <yearOfBirthday>1</yearOfBirthday>
+    <dayOfAnniversary>2</dayOfAnniversary>
+    <monthOfAnniversary>February</monthOfAnniversary>
+    <yearOfAnniversary>1</yearOfAnniversary>
+    <groupName>Group</groupName>
+    <address2>Secondary address 1</address2>
+    <phone2>Secondary phone 1</phone2>
+    <notes>Notes 1</notes>
+  </contact>
+  <contact>
+    <firstName>First name 2</firstName>
+    <middleName>Middle name 2</middleName>
+    <lastName>Last name 2</lastName>
+    <nickname>Nickname 2</nickname>
+    <title>Title 2</title>
+    <company>Company 2</company>
+    <address>Address 2</address>
+    <homePhone>Home phone 2</homePhone>
+    <mobilePhone>Mobile phone 2</mobilePhone>
+    <workPhone>Work phone 2</workPhone>
+    <fax>Fax 2</fax>
+    <email>2@2.ru</email>
+    <email2>2@2.2ru</email2>
+    <email3>2@2.3ru</email3>
+    <homepage>Homepage 2</homepage>
+    <dayOfBirthday>1</dayOfBirthday>
+    <monthOfBirthday>January</monthOfBirthday>
+    <yearOfBirthday>2</yearOfBirthday>
+    <dayOfAnniversary>2</dayOfAnniversary>
+    <monthOfAnniversary>February</monthOfAnniversary>
+    <yearOfAnniversary>2</yearOfAnniversary>
+    <groupName>Group</groupName>
+    <address2>Secondary address 2</address2>
+    <phone2>Secondary phone 2</phone2>
+    <notes>Notes 2</notes>
+  </contact>
+  <contact>
+    <firstName>First name 3</firstName>
+    <middleName>Middle name 3</middleName>
+    <lastName>Last name 3</lastName>
+    <nickname>Nickname 3</nickname>
+    <title>Title 3</title>
+    <company>Company 3</company>
+    <address>Address 3</address>
+    <homePhone>Home phone 3</homePhone>
+    <mobilePhone>Mobile phone 3</mobilePhone>
+    <workPhone>Work phone 3</workPhone>
+    <fax>Fax 3</fax>
+    <email>3@3.ru</email>
+    <email2>3@3.2ru</email2>
+    <email3>3@3.3ru</email3>
+    <homepage>Homepage 3</homepage>
+    <dayOfBirthday>1</dayOfBirthday>
+    <monthOfBirthday>January</monthOfBirthday>
+    <yearOfBirthday>3</yearOfBirthday>
+    <dayOfAnniversary>2</dayOfAnniversary>
+    <monthOfAnniversary>February</monthOfAnniversary>
+    <yearOfAnniversary>3</yearOfAnniversary>
+    <groupName>Group</groupName>
+    <address2>Secondary address 3</address2>
+    <phone2>Secondary phone 3</phone2>
+    <notes>Notes 3</notes>
+  </contact>
+</list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-15T19:40:41" hostname="Silva-Win8" time="60.399">
+  <properties/>
+  <testcase name="testContactCreation[0](ContactData{id=2147483647, firstName='First name 0', lastName='Last name 0'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="60.399"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
