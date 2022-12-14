@@ -6,9 +6,41 @@
   <component name="ChangeListManager">
     <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../mantis_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/contacts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/contacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/groups.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/groups.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/testng-contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/testng-contacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/build/resources/test/testng-groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/build/resources/test/testng-groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/out/test/resources/config_inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/out/test/resources/config_inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/out/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/config_inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/config_inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/contacts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/contacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/groups.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/groups.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/testng-contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/testng-contacts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/resources/testng-groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/resources/testng-groups.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,18 +119,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Tanya/OneDrive/Документы/GitHub/java_pft/mantis_tests/src/test/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tanya/OneDrive/Документы/GitHub/java_pft/mantis_tests/build.gradle&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.mantis.appmanager" />

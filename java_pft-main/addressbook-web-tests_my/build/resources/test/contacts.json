@@ -1,0 +1,38 @@
+[
+  {
+    "firstname": "First name 0",
+    "lastname": "Last name 0",
+    "homePhone": "Home phone 0",
+    "homePhone2": "Secondary phone 0",
+    "mobilePhone": "Mobile phone 0",
+    "workPhone": "Work phone 0",
+    "email": "0@0.ru",
+    "email2": "0@0.2ru",
+    "email3": "0@0.3ru",
+    "address": "Address 0"
+  },
+  {
+    "firstname": "First name 1",
+    "lastname": "Last name 1",
+    "homePhone": "Home phone 1",
+    "homePhone2": "Secondary phone 1",
+    "mobilePhone": "Mobile phone 1",
+    "workPhone": "Work phone 1",
+    "email": "1@1.ru",
+    "email2": "1@1.2ru",
+    "email3": "1@1.3ru",
+    "address": "Address 1"
+  },
+  {
+    "firstname": "First name 2",
+    "lastname": "Last name 2",
+    "homePhone": "Home phone 2",
+    "homePhone2": "Secondary phone 2",
+    "mobilePhone": "Mobile phone 2",
+    "workPhone": "Work phone 2",
+    "email": "2@2.ru",
+    "email2": "2@2.2ru",
+    "email3": "2@2.3ru",
+    "address": "Address 2"
+  }
+]
