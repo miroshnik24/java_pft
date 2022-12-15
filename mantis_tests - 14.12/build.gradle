@@ -2,7 +2,6 @@ import org.gradle.api.tasks.testing.Test
 
 apply plugin: 'java'
 
-
 repositories
 {
     mavenCentral()

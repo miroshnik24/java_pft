@@ -41,12 +41,12 @@ public class JamesHelper {
         closeTelnetSession();
     }
 
-    public void deleteUser(String name, String passwd) {
-        initTelnetSession();
-        write("deluser " + name + " " + passwd);
-        String result = readUntil("User " + name + " deleted");
-        closeTelnetSession();
-    }
+//    public void deleteUser(String name, String passwd) {
+//        initTelnetSession();
+//        write("deluser " + name + " " + passwd);
+//        String result = readUntil("User " + name + " deleted");
+//        closeTelnetSession();
+//    }
 
     private void initTelnetSession() {
         mailserver = app.getProperty("mailserver.host");
@@ -139,7 +139,7 @@ public class JamesHelper {
                 return allMail;
             }
             try {
-                Thread.sleep(6000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
