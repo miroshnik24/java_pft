@@ -139,7 +139,7 @@ public class JamesHelper {
                 return allMail;
             }
             try {
-                Thread.sleep(6000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.addressbook.tests.ContactDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-05T17:49:17" hostname="LAPTOP-6NF5C6OJ" time="4.988">
-  <properties/>
-  <testcase name="testContactDeletion" classname="ru.stqa.addressbook.tests.ContactDeletionTests" time="4.988"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
