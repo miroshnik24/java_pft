@@ -1,0 +1,12 @@
+243  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: AUTH
+246  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: DATA
+246  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: EHLO
+246  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: HELO
+246  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: HELP
+246  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: MAIL
+246  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: NOOP
+247  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: QUIT
+247  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: RCPT
+248  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: RSET
+248  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: STARTTLS
+248  [main] DEBUG o.s.smtp.server.CommandHandler - Added command: VRFY
