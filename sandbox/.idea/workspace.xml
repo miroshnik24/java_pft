@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mantis_tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest_sample/build/reports/tests/test/classes/ru.stqa.pft.test.RestTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest_sample/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_sample/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest_sample/build/reports/tests/test/packages/ru.stqa.pft.test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_sample/build/reports/tests/test/packages/ru.stqa.pft.test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest_sample/build/test-results/test/TEST-ru.stqa.pft.test.RestTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest_sample/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../rest_sample/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,8 +121,34 @@
       <recent name="C:\Users\Tanya\OneDrive\Документы\GitHub\java_pft\addressbook-web-tests\src\test\resources\stru.png" />
       <recent name="C:\Users\Tanya\OneDrive\Документы\GitHub\java_pft\addressbook-web-tests\src\test\resources\" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.test" />
+    </key>
   </component>
   <component name="RunManager" selected="Gradle.RestTests">
+    <configuration name="RestAssuredTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../rest_sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.pft.test.RestAssuredTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RestTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -188,23 +217,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactModificationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis_tests.test" />
       <extension name="coverage">
@@ -240,19 +252,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.RestAssuredTests" />
       <item itemvalue="Gradle.RestTests" />
       <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.RegistrationTests" />
-      <item itemvalue="TestNG.ContactModificationTests" />
       <item itemvalue="TestNG.ContactCreationTests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.RestTests" />
+        <item itemvalue="Gradle.RestAssuredTests" />
         <item itemvalue="TestNG.RegistrationTests" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="TestNG.ContactModificationTests" />
       </list>
     </recent_temporary>
   </component>
