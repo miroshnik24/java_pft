@@ -77,7 +77,7 @@ public class ContactCreationTests extends TestBase
         Contacts before = app.db().contacts();
         ensurePreconditions(contact.getGroupName());
         app.goTo().newContactPage();
-        app.contact().createContact(contact);
+        app.contact().createContact(contact, true );
         app.goTo().homePage();
         Contacts after = app.db().contacts();
         assertThat(after.size(), equalTo(before.size() + 1));

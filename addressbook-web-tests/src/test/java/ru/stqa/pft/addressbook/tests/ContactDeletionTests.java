@@ -24,7 +24,7 @@ public class ContactDeletionTests extends TestBase
                     .withEmail("mail@mail.ru").withEmail2("mail1@mail.ru").withEmail3("mail2@mail.ru")
                     .withAddress2("testadress2").withPhone2("1-00-00");
             app.goTo().newContactPage();
-            app.contact().createContact(cd);
+            app.contact().createContact(cd, true );
             app.goTo().homePage();
         }
     }

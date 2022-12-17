@@ -30,7 +30,7 @@ public class ContactModificationTests extends TestBase
                     .withAddress2("test15").withPhone2("2-22-22").withNotes("Htest1");
 
             app.goTo().newContactPage();
-            app.contact().createContact(cd);
+            app.contact().createContact(cd, true );
         }
     }
 

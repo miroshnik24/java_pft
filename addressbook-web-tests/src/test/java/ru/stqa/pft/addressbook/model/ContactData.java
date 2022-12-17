@@ -9,7 +9,9 @@ import ru.stqa.pft.addressbook.tests.ContactCheck;
 import javax.persistence.*;
 import java.io.File;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Entity
@@ -103,6 +105,10 @@ public class ContactData
     private String allPhones;
     @Transient
     private String allEmails;
+
+    @JoinTable(name = "address_in_groups",
+            joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
     @Override
     public String toString()
@@ -503,4 +509,8 @@ public class ContactData
                 .stream().filter((s) -> !s.equals(""))
                 .collect(Collectors.joining("\n"));
     }
+
+  public Groups getGroups() {
+      return new Groups(groups);
+  }
 }

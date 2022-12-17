@@ -29,34 +29,30 @@ public class ApplicationManager
         properties = new Properties();
     }
 
-    public void init() throws IOException
-    {
+    public void init() throws IOException {
         String target = System.getProperty("target", "local");
-        dbHelper = new DbHelper();
-
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
-        if (browser.equals(BrowserType.FIREFOX))
-        {
-            wd = new FirefoxDriver();
-        }
-        else if (browser.equals(BrowserType.CHROME))
-        {
-            wd = new ChromeDriver();
-        }
-        else if (browser.equals(BrowserType.IE))
-        {
-            wd = new InternetExplorerDriver();
-        }
+        dbHelper = new DbHelper();
 
-        wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        if ("".equals(properties.getProperty("selenium.server"))) {
+            if (browser.equals(BrowserType.CHROME)) {
+                wd = new ChromeDriver();
+            } else if (browser.equals(BrowserType.FIREFOX)) {
+                wd = new FirefoxDriver();
+            } else if (browser.equals(BrowserType.IE)) {
+                wd = new InternetExplorerDriver();
+            }
+        }
+        wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         wd.get(properties.getProperty("web.baseUrl"));
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
-        sessionHelper = new SessionHelper(wd);
         contactHelper = new ContactHelper(wd);
+        sessionHelper = new SessionHelper(wd);
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
     }
+
 
     public void stop()
     {
