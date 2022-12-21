@@ -16,7 +16,7 @@ public class ApplicationManager
 {
   private final Properties properties;
   WebDriver wd;
-  private ContactHelper contactHelper;
+ // private ContactHelper contactHelper;
   private NovigationHelper navigationHelper;
   private GroupHelper groupHelper;
   private SessionHelper sessionHelper;
@@ -54,7 +54,7 @@ public class ApplicationManager
     groupHelper = new GroupHelper(wd);
     navigationHelper = new NovigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
-    contactHelper = new ContactHelper(wd);
+   // contactHelper = new ContactHelper(wd);
     sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
   }
 
@@ -74,10 +74,10 @@ public class ApplicationManager
     return navigationHelper;
   }
 
-  public ContactHelper contact()
-  {
-    return contactHelper;
-  }
+//  public ContactHelper contact()
+//  {
+//    return contactHelper;
+//  }
 
   public DbHelper db()
   {
