@@ -4,7 +4,6 @@ import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
-import ru.stqa.pft.addressbook.tests.ContactCheck;
 
 import javax.persistence.*;
 import java.io.File;
