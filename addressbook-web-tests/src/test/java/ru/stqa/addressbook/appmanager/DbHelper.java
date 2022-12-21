@@ -30,7 +30,7 @@ public class DbHelper {
     List<GroupData> result = session.createQuery( "from GroupData" ).list();
     session.getTransaction().commit();
     session.close();
-    return new Groups(result);
+    return new Groups();
   }
 
   public Contacts contacts() {

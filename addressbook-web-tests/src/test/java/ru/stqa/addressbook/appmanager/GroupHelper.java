@@ -111,7 +111,7 @@ public class GroupHelper extends HelperBase
   {
     if(groupCache != null)
     {
-      return new Groups(groupCache);
+      return new Groups();
     }
     groupCache = new Groups();
     List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
@@ -121,7 +121,7 @@ public class GroupHelper extends HelperBase
       int id = Integer.parseInt(e.findElement(By.tagName("input")).getAttribute("value"));
       groupCache.add(new GroupData().withId(id).withName(name));
     }
-    return new Groups(groupCache);
+    return new Groups();
   }
 
   public void delete(GroupData group)
