@@ -1,5 +1,6 @@
 package ru.stqa.addressbook.appmanager;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -7,10 +8,13 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -36,13 +40,21 @@ public class ApplicationManager {
 
     dbHelper = new DbHelper();
 
-    if (browser.equals(BrowserType.FIREFOX)) {
-      wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
-    } else if (browser.equals(BrowserType.CHROME)) {
-      wd = new ChromeDriver(new ChromeOptions().setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe"));
-    } else if (browser.equals(BrowserType.EDGE)) {
-      wd = new EdgeDriver();
+    if ("".equals(properties.getProperty("selenium.server"))) {
+      if (browser.equals( BrowserType.FIREFOX )) {
+        wd = new FirefoxDriver();
+      } else if (browser.equals( BrowserType.CHROME )) {
+        wd = new ChromeDriver();
+      } else if (browser.equals( BrowserType.IE )) {
+        wd = new EdgeDriver();
+      }
+    } else {
+      DesiredCapabilities capabilities = new DesiredCapabilities();
+      capabilities.setBrowserName(browser);
+      capabilities.setPlatform( Platform.fromString(System.getProperty("platform", "win10")));
+      wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
     }
+
     wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     wd.get(properties.getProperty("web.baseUrl"));
     groupHelper = new GroupHelper(wd);
