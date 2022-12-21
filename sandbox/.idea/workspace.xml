@@ -4,47 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab64bc4f-0a78-4dbf-80fc-bb852f29c779" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/META-INF/addressbook-web-tests.main.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/META-INF/addressbook-web-tests.main.kotlin_module" afterDir="false" />
+<<<<<<< Updated upstream
+    <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/META-INF/addressbook-web-tests.main.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/Aleksandr_Golovin.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/chalov.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/BaseHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/DbHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/SessionHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/ContactDataGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Contacts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Groups.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/contacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/contacts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/contacts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/groups.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng-contacts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng-contacts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng-groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng-groups.xml" afterDir="false" />
+=======
+    <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="настройка тестов">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +31,12 @@
     <projectState path="$PROJECT_DIR$/../addressbook-web-tests">
       <ProjectState />
     </projectState>
+<<<<<<< Updated upstream
     <projectState path="$PROJECT_DIR$/../mantis_tests">
       <ProjectState />
     </projectState>
+=======
+>>>>>>> Stashed changes
     <projectState path="$PROJECT_DIR$/../rest_sample">
       <ProjectState />
     </projectState>
@@ -88,12 +60,6 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/../mantis_tests">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/../../../../GitHub/addressbook-web-tests">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/../rest_sample">
           <activation />
         </task>
         <projects_view>
@@ -135,6 +101,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -145,8 +112,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Tanya/OneDrive/GitHub/addressbook-web-tests/build.gradle",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors"
+>>>>>>> Stashed changes
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.mantis.appmanager" />
@@ -166,7 +145,7 @@
       <recent name="ru.stqa.pft.test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactCreationTests (1)">
+  <component name="RunManager" selected="Gradle.PasswordChangeTests">
     <configuration name="PasswordChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -181,6 +160,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.stqa.pft.mantis.tests.PasswordChangeTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RestAssuredTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../rest_sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.pft.test.RestAssuredTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -230,33 +232,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactCreationTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+    <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mantis_tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.ContactCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactCreationTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -266,18 +251,18 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.PasswordChangeTests" />
+      <item itemvalue="Gradle.RestAssuredTests" />
       <item itemvalue="Gradle.RestTests" />
-      <item itemvalue="TestNG.ContactCreationTests (1)" />
-      <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.AddContactToGroupTests" />
+      <item itemvalue="TestNG.RegistrationTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ContactCreationTests (1)" />
-        <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="Gradle.PasswordChangeTests" />
         <item itemvalue="TestNG.AddContactToGroupTests" />
         <item itemvalue="Gradle.RestTests" />
+        <item itemvalue="Gradle.RestAssuredTests" />
+        <item itemvalue="TestNG.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>

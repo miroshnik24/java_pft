@@ -1,0 +1,29 @@
+<list>
+  <contact>
+    <firstName>First name 0</firstName>
+    <middleName>Middle name 0</middleName>
+    <lastName>Last name 0</lastName>
+    <nickname>Nickname 0</nickname>
+    <title>Title 0</title>
+    <company>Company 0</company>
+    <address>Address 0</address>
+    <homePhone>Home phone 0</homePhone>
+    <mobilePhone>Mobile phone 0</mobilePhone>
+    <workPhone>Work phone 0</workPhone>
+    <fax>Fax 0</fax>
+    <email>0@0.ru</email>
+    <email2>0@0.2ru</email2>
+    <email3>0@0.3ru</email3>
+    <homepage>Homepage 0</homepage>
+    <dayOfBirthday>1</dayOfBirthday>
+    <monthOfBirthday>January</monthOfBirthday>
+    <yearOfBirthday>0</yearOfBirthday>
+    <dayOfAnniversary>2</dayOfAnniversary>
+    <monthOfAnniversary>February</monthOfAnniversary>
+    <yearOfAnniversary>0</yearOfAnniversary>
+    <groupName>Group</groupName>
+    <address2>Secondary address 0</address2>
+    <phone2>Secondary phone 0</phone2>
+    <notes>Notes 0</notes>
+  </contact>
+</list>
