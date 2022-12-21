@@ -1,11 +1,11 @@
-package ru.stqa.addressbook.appmanager;
+package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import ru.stqa.addressbook.model.ContactData;
-import ru.stqa.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
 import java.util.List;
 
 import static java.lang.Integer.parseInt;

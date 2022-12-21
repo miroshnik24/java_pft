@@ -1,20 +1,14 @@
-package ru.stqa.addressbook.tests;
+package ru.stqa.pft.addressbook.tests;
 
 import org.openqa.selenium.remote.BrowserType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import ru.stqa.addressbook.appmanager.ApplicationManager;
-import ru.stqa.addressbook.model.ContactData;
-import ru.stqa.addressbook.model.Contacts;
-import ru.stqa.addressbook.model.GroupData;
-import ru.stqa.addressbook.model.Groups;
+import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
+import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 

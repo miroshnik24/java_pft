@@ -1,10 +1,10 @@
-package ru.stqa.addressbook.model;
+package ru.stqa.pft.addressbook.model;
 
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
-import ru.stqa.addressbook.tests.ContactCheck;
+import ru.stqa.pft.addressbook.tests.ContactCheck;
 
 import javax.persistence.*;
 import java.io.File;
@@ -493,7 +493,7 @@ public class ContactData
   {
     return Arrays.asList(getHomePhone(), getMobilePhone(), getWorkPhone(), getPhone2())
             .stream().filter((s) -> !s.equals(""))
-            .map(ContactCheck::cleaned)
+            .map( ContactCheck::cleaned)
             .collect(Collectors.joining("\n"));
   }
 

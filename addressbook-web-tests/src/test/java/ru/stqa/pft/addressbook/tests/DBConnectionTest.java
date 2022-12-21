@@ -1,8 +1,8 @@
-package ru.stqa.addressbook.tests;
+package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.Test;
-import ru.stqa.addressbook.model.GroupData;
-import ru.stqa.addressbook.model.Groups;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import java.sql.*;
 
