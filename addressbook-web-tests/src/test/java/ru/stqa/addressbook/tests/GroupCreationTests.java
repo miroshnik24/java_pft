@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.addressbook.model.GroupData;
 import ru.stqa.addressbook.model.Groups;
-import sun.util.logging.resources.logging_es;
+//import sun.util.logging.resources.logging_es;
 
 import java.io.*;
 import java.nio.Buffer;
@@ -76,5 +76,6 @@ public class GroupCreationTests extends TestBase {
     assertThat(app.group().count(), equalTo(before.size()));
     Groups after = app.db().groups();
     assertThat(after, equalTo(before));
+    verifyGroupListInUI();
   }
 }

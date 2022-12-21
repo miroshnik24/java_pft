@@ -9,8 +9,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import ru.stqa.addressbook.model.ContactData;
 import ru.stqa.addressbook.model.GroupData;
-import ru.stqa.addressbook.model.ContactData;
-import ru.stqa.addressbook.model.GroupData;
 
 import java.util.List;
 

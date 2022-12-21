@@ -23,7 +23,7 @@ public class ContactCheck extends TestBase{
   @Test
   public  <T> String mergePhones(ContactData contact) {
     assertThat(contact.getAllPhones(), equalTo(mergePhones(app.contact().infoFromEditForm(contact))));
-    return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(),contact.getWorkPhone(),contact.getHomePhone2())
+    return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(),contact.getWorkPhone(),contact.getPhone2())
             .stream().filter((s) -> ! s.equals(""))
             .map(ContactCheck::cleaned)
             .collect(Collectors.joining("\n"));
@@ -35,7 +35,7 @@ public class ContactCheck extends TestBase{
 
   @Test
   public  <T> String mergeEmail(ContactData contact) {
-    assertThat(contact.getAllEmail(), equalTo(mergeEmail(app.contact().infoFromEditForm(contact))));
+    assertThat(contact.getAllEmails(), equalTo(mergeEmail(app.contact().infoFromEditForm(contact))));
     return Arrays.asList(contact.getEmail(), contact.getEmail2(),contact.getEmail3())
             .stream().filter((s) -> ! s.equals(""))
             .collect(Collectors.joining("\n"));
