@@ -31,8 +31,8 @@ public class GroupData {
   @Type(type = "text")
   private String footer;
 
-  @ManyToMany(mappedBy = "groups")
-  private Set<ContactData> contacts = new HashSet<ContactData>();
+//  @ManyToMany(mappedBy = "groups")
+//  private Set<ContactData> contacts = new HashSet<ContactData>();
 
   @Override
   public boolean equals(Object o) {
@@ -100,9 +100,9 @@ public class GroupData {
     return this;
   }
 
-  public Contacts getContacts() {
-    return new Contacts(contacts);
-  }
+//  public Contacts getContacts() {
+//    return new Contacts(contacts);
+//  }
 }
 
 

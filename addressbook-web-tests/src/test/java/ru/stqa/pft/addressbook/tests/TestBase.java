@@ -55,17 +55,17 @@ public class TestBase
     }
   }
 
-  public void verifyContactListInUI()
-  {
-    if(Boolean.getBoolean("verifyUI"))
-    {
-      Contacts dbContacts = app.db().contacts();
-      Contacts uiContacts = app.contact().all();
-
-      Set<ContactData> dbContactsAfter = dbContacts.stream().map((c) -> new ContactData().withId(c.getId()).withLastName(c.getLastName())
-                      .withFirstName(c.getFirstName()).withAddress(c.getAddress()).withAllPhones(c.mergedPhone()).withAllEmails(c.mergeEmails()))
-              .collect(Collectors.toSet());
-      assertThat(uiContacts, equalTo(dbContactsAfter));
-    }
+//  public void verifyContactListInUI()
+//  {
+//    if(Boolean.getBoolean("verifyUI"))
+//    {
+//      Contacts dbContacts = app.db().contacts();
+//      Contacts uiContacts = app.contact().all();
+//
+//      Set<ContactData> dbContactsAfter = dbContacts.stream().map((c) -> new ContactData().withId(c.getId()).withLastName(c.getLastName())
+//                      .withFirstName(c.getFirstName()).withAddress(c.getAddress()).withAllPhones(c.mergedPhone()).withAllEmails(c.mergeEmails()))
+//              .collect(Collectors.toSet());
+//      assertThat(uiContacts, equalTo(dbContactsAfter));
+//    }
   }
-}
+//}
