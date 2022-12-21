@@ -14,3 +14,9 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 java_pft/.idea/workspace.xml
 *.class
+addressbook-web-tests/out/test/classes/META-INF/addressbook-web-tests.main.kotlin_module
+addressbook-web-tests/out/test/classes/META-INF/addressbook-web-tests.main.kotlin_module
+addressbook-web-tests/out/test/resources/chalov.jpg
+addressbook-web-tests/out/test/resources/Aleksandr_Golovin.jpg
+*.log
+sandbox/.idea/workspace.xml

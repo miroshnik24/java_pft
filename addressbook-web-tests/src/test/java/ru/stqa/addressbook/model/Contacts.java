@@ -2,41 +2,44 @@ package ru.stqa.addressbook.model;
 
 import com.google.common.collect.ForwardingSet;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class Contacts extends ForwardingSet<ContactData> {
-
+public class Contacts extends ForwardingSet<ContactData>
+{
   private Set<ContactData> delegate;
 
-  public Contacts(Contacts contacts) {
-    this.delegate = new HashSet<ContactData>(contacts.delegate);
+  public Contacts()
+  {
+    this.delegate = new HashSet<>();
   }
 
-  public Contacts() {
-    this.delegate = new HashSet<ContactData>();
+  public Contacts(Contacts contacts)
+  {
+    this.delegate = new HashSet<>(contacts.delegate);
   }
 
-  public Contacts(Collection<ContactData> contacts) {
-    this.delegate = new HashSet<ContactData>(contacts);
+  public Contacts(Collection<ContactData> contacts)
+  {
+    this.delegate = new HashSet<>(contacts);
   }
 
   @Override
-  protected Set<ContactData> delegate() {
+  protected Set<ContactData> delegate()
+  {
     return delegate;
   }
 
-  public Contacts withAdded(ContactData contact) {
+  public Contacts withAdded(ContactData cd)
+  {
     Contacts contacts = new Contacts(this);
-    contacts.add(contact);
+    contacts.add(cd);
     return contacts;
   }
 
-  public Contacts withOut(ContactData contact) {
+  public Contacts without(ContactData cd)
+  {
     Contacts contacts = new Contacts(this);
-    contacts.remove(contact);
+    contacts.remove(cd);
     return contacts;
   }
 }

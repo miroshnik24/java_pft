@@ -5,6 +5,8 @@
       <option name="excludeList">
         <list>
           <option value="org.seleniumhq.selenium:selenium-java" />
+          <option value="org.testng:testng" />
+          <option value="org.hamcrest:hamcrest" />
         </list>
       </option>
     </inspection_tool>

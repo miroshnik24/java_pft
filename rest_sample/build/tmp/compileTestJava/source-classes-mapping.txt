@@ -1,0 +1,10 @@
+ru/stqa/pft/test/RestTests.java
+ ru.stqa.pft.test.RestTests
+ ru.stqa.pft.test.RestTests$1
+ru/stqa/pft/test/Issue.java
+ ru.stqa.pft.test.Issue
+ru/stqa/pft/test/RestAssuredTests.java
+ ru.stqa.pft.test.RestAssuredTests
+ ru.stqa.pft.test.RestAssuredTests$1
+ru/stqa/pft/test/TestBase.java
+ ru.stqa.pft.test.TestBase

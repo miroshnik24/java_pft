@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00180fcb-4241-44f4-9acd-eb4fc31f79c9" name="Changes" comment="" />
+<<<<<<< Updated upstream
+    <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/META-INF/addressbook-web-tests.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/Aleksandr_Golovin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/chalov.jpg" beforeDir="false" />
+=======
+    <list default="true" id="7c5c5a84-6d4b-4334-a281-0aa687f966a0" name="Changes" comment="настройка тестов">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+>>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +31,19 @@
     <projectState path="$PROJECT_DIR$/../addressbook-web-tests">
       <ProjectState />
     </projectState>
+<<<<<<< Updated upstream
+    <projectState path="$PROJECT_DIR$/../mantis_tests">
+      <ProjectState />
+    </projectState>
+=======
+>>>>>>> Stashed changes
+    <projectState path="$PROJECT_DIR$/../rest_sample">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../soap-sample">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/../../../../../../../Windows/GitHub/java_pft-26c9b7d50cac073fd0ae9090e306e1ba41335c87/addressbook-web-tests">
@@ -34,6 +57,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/../addressbook-web-tests">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/../mantis_tests">
           <activation />
         </task>
         <projects_view>
@@ -75,40 +101,130 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tanya/OneDrive/GitHub/addressbook-web-tests/build.gradle&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tanya/OneDrive/Документы/GitHub/java_pft/rest_sample/build.gradle&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Tanya/OneDrive/GitHub/addressbook-web-tests/build.gradle",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors"
+>>>>>>> Stashed changes
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+      <recent name="ru.stqa.pft.test" />
       <recent name="ru.stqa.addressbook.appmanager" />
       <recent name="ru.stqa.addressbook" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tanya\OneDrive\Документы\GitHub\java_pft\mantis_tests\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tanya\OneDrive\Документы\GitHub\java_pft\addressbook-web-tests\src\test\resources" />
       <recent name="C:\Users\Tanya\OneDrive\Документы\GitHub\java_pft\addressbook-web-tests\src\test\resources\stru.png" />
       <recent name="C:\Users\Tanya\OneDrive\Документы\GitHub\java_pft\addressbook-web-tests\src\test\resources\" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.test" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddContactToGroup">
-    <configuration name="AddContactToGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.PasswordChangeTests">
+    <configuration name="PasswordChangeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../mantis_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.pft.mantis.tests.PasswordChangeTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RestAssuredTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../rest_sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.pft.test.RestAssuredTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RestTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../rest_sample" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.pft.test.RestTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AddContactToGroupTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.AddContactToGroup" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.AddContactToGroupTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -116,106 +232,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactCreationTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+    <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mantis_tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.ContactCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.ContactCreationTests" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea -DverifyUI=true" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.ContactCreationTests" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea -Dbrowser=firefox" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteContactFromGroup" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.DeleteContactFromGroup" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.addressbook.tests.HbConnectionTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -224,19 +250,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.AddContactToGroup" />
-      <item itemvalue="TestNG.ContactCreationTests (1)" />
-      <item itemvalue="TestNG.DeleteContactFromGroup" />
-      <item itemvalue="TestNG.HbConnectionTest" />
-      <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="Gradle.PasswordChangeTests" />
+      <item itemvalue="Gradle.RestAssuredTests" />
+      <item itemvalue="Gradle.RestTests" />
+      <item itemvalue="TestNG.AddContactToGroupTests" />
+      <item itemvalue="TestNG.RegistrationTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddContactToGroup" />
-        <item itemvalue="TestNG.ContactCreationTests (1)" />
-        <item itemvalue="TestNG.DeleteContactFromGroup" />
-        <item itemvalue="TestNG.HbConnectionTest" />
-        <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="Gradle.PasswordChangeTests" />
+        <item itemvalue="TestNG.AddContactToGroupTests" />
+        <item itemvalue="Gradle.RestTests" />
+        <item itemvalue="Gradle.RestAssuredTests" />
+        <item itemvalue="TestNG.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +288,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="origin/main2" />
                       </list>
                     </value>
                   </entry>
