@@ -16,35 +16,43 @@ public class ContactCheck extends TestBase{
   @BeforeMethod
   public void ensurePreconditions(){
     app.goTo().goToHomePage();
-    ContactData contact = app.contact().all().iterator().next();
+   // ContactData contact = app.contact().all().iterator().next();
     //ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
   }
 
   @Test
-  public  <T> String mergePhones(ContactData contact) {
-    assertThat(contact.getAllPhones(), equalTo(mergePhones(app.contact().infoFromEditForm(contact))));
-    return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(),contact.getWorkPhone(),contact.getHomePhone2())
-            .stream().filter((s) -> ! s.equals(""))
-            .map(ContactPhoneTests::cleaned)
-            .collect(Collectors.joining("\n"));
+  public void testContactPhones()
+  {
+    app.goTo().homePage();
+    ContactData cd = app.db().contacts().iterator().next();
+    ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(cd);
+
+    assertThat(cd.getAllPhones(), equalTo(contactInfoFromEditForm.mergedPhones()));
   }
-  public static String cleaned(String phone) {
+
+  public static String cleaned(String phone)
+  {
     return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
   }
 
   @Test
-  public  <T> String mergeAddress(ContactData contact) {
-    assertThat(contact.getAllAddress(), equalTo(mergeAddress(app.contact().infoFromEditForm(contact))));
-    return Stream.of(contact.getAddress()).filter((s) -> !s.equals(""))
-            .collect(Collectors.joining("\n"));
+  public void testContactAddress()
+  {
+    app.goTo().homePage();
+    ContactData cd = app.db().contacts().iterator().next();
+    ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(cd);
+
+    assertThat(cd.getAddress(), equalTo(contactInfoFromEditForm.getAddress()));
   }
 
   @Test
-  public  <T> String mergeEmail(ContactData contact) {
-    assertThat(contact.getAllEmail(), equalTo(mergeEmail(app.contact().infoFromEditForm(contact))));
-    return Arrays.asList(contact.getEmail(), contact.getEmail2(),contact.getEmail3())
-            .stream().filter((s) -> ! s.equals(""))
-            .collect(Collectors.joining("\n"));
+  public void testContactAddress()
+  {
+    app.goTo().homePage();
+    ContactData cd = app.db().contacts().iterator().next();
+    ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(cd);
+
+    assertThat(cd.getAddress(), equalTo(contactInfoFromEditForm.getAddress()));
   }
 
 }

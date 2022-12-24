@@ -1,6 +1,10 @@
 package ru.stqa.addressbook.model;
 
+import ru.stqa.addressbook.tests.ContactCheck;
+
+import java.util.Arrays;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class ContactData {
   private int id = Integer.MAX_VALUE;
@@ -185,5 +189,19 @@ public String toString() {
     return result;
   }
 
+  public String mergedPhones()
+  {
+    return Arrays.asList(getHomePhone(), getMobilePhone(), getWorkPhone(), getHomePhone2())
+            .stream().filter((s) -> !s.equals(""))
+            .map( ContactCheck::cleaned)
+            .collect( Collectors.joining("\n"));
+  }
+
+  public String mergeEmails()
+  {
+    return Arrays.asList(getEmail(), getEmail2(), getEmail3())
+            .stream().filter((s) -> !s.equals(""))
+            .collect(Collectors.joining("\n"));
+  }
 
 }
