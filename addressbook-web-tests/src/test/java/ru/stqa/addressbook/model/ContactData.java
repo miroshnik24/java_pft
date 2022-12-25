@@ -2,8 +2,14 @@ package ru.stqa.addressbook.model;
 
 import ru.stqa.addressbook.tests.ContactCheck;
 
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class ContactData {
@@ -22,7 +28,9 @@ public class ContactData {
   private String allEmail;
   private String address;
   private String allAddress;
-
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupData> groups = new HashSet<GroupData>();
   //  private String nickname;
 //  private String title;
 @Override
@@ -166,6 +174,10 @@ public String toString() {
   public ContactData withAllAddress(String allAddress) {
     this.allAddress = allAddress;
     return this;
+  }
+
+  public Groups getGroups() {
+    return new Groups(groups);
   }
 
   @Override
