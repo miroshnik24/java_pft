@@ -70,8 +70,8 @@ public class TestBase
       Contacts dbContacts = app.db().contacts();
       Contacts uiContacts = app.contact().all();
 
-      Set<ContactData> dbContactsAfter = dbContacts.stream().map((c) -> new ContactData().withId(c.getId()).withLastName(c.getLastName())
-                      .withFirstName(c.getFirstName()).withAddress(c.getAddress()).withAllPhones(c.mergedPhone()).withAllEmails(c.mergeEmails()))
+      Set<ContactData> dbContactsAfter = dbContacts.stream().map((c) -> new ContactData().withId(c.getId()).withLastname(c.getLastname())
+                      .withFirstname(c.getFirstname()).withAddress(c.getAddress()).withAllPhones(c.mergedPhones()).withAllEmail(c.mergeEmails()))
               .collect(Collectors.toSet());
       assertThat(uiContacts, equalTo(dbContactsAfter));
     }

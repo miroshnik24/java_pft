@@ -36,8 +36,8 @@ public class ContactHelper extends HelperBase
       String allPhones = contactData.get(5).getText();
       String address = contactData.get(3).getText();
       String allEmails = contactData.get(4).getText();
-      ContactData cd = new ContactData().withId(id).withLastName(lastName).withFirstName(firstName)
-              .withAllPhones(allPhones).withAddress(address).withAllEmails(allEmails);
+      ContactData cd = new ContactData().withId(id).withFirstname(lastName).withFirstname(firstName)
+              .withAllPhones(allPhones).withAddress(address).withAllEmail(allEmails);
 
       contactsCache.add(cd);
     }
@@ -83,10 +83,10 @@ public class ContactHelper extends HelperBase
 
   public void fillContactForm(ContactData contactData, boolean creation)
   {
-    type(By.name("firstname"), contactData.getFirstName());
-    type(By.name("middlename"), contactData.getMiddleName());
-    type(By.name("lastname"), contactData.getLastName());
-    type(By.name("nickname"), contactData.getNickname());
+    type(By.name("firstname"), contactData.getFirstname());
+    type(By.name("middlename"), contactData.getMiddlename());
+    type(By.name("lastname"), contactData.getLastname());
+    type(By.name("nickname"), contactData.getLastname());
 
     if(contactData.getPhoto() == null && !creation)
     {
