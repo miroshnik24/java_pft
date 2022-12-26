@@ -28,7 +28,4 @@ public class ContactCheck extends TestBase{
     return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
   }
 
-
-
-
 }
