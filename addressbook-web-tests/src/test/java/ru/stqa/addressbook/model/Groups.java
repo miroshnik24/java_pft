@@ -2,49 +2,34 @@ package ru.stqa.addressbook.model;
 
 import com.google.common.collect.ForwardingSet;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Groups extends ForwardingSet<GroupData>
-{
+public class Groups extends ForwardingSet<GroupData> {
+
   private Set<GroupData> delegate;
 
-  public Groups()
-  {
-    this.delegate = new HashSet<>();
+  public Groups(Groups groups) {
+    this.delegate = new HashSet<GroupData>(groups.delegate);
   }
 
-  public Groups(Groups groups)
-  {
-    this.delegate = new HashSet<>(groups.delegate);
-  }
-
-  public Groups(Collection<GroupData> groups)
-  {
-    this.delegate = new HashSet<>(groups);
-  }
-
-  public Groups(int groups) {
-    this.delegate = new HashSet<GroupData>(groups);
+  public Groups() {
+    this.delegate = new HashSet<GroupData>();
   }
 
   @Override
-  protected Set<GroupData> delegate()
-  {
+  protected Set<GroupData> delegate() {
     return delegate;
   }
 
-  public Groups withAdded(GroupData group)
-  {
-    Groups groups = new Groups();
+  public Groups withAdded (GroupData group) {
+    Groups groups = new Groups(this);
     groups.add(group);
     return groups;
   }
 
-  public Groups without(GroupData group)
-  {
-    Groups groups = new Groups();
+  public Groups withOut (GroupData group) {
+    Groups groups = new Groups(this);
     groups.remove(group);
     return groups;
   }

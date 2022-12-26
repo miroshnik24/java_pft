@@ -13,8 +13,6 @@ dependencies {
     implementation 'com.thoughtworks.xstream:xstream:1.4.19'
     implementation 'com.google.code.gson:gson:2.10'
     implementation 'ch.qos.logback:logback-classic:1.4.5'
-    implementation 'mysql:mysql-connector-java:8.0.31'
-    implementation 'org.hibernate:hibernate-core:5.4.1.Final'
 }
 
 
@@ -28,9 +26,11 @@ task testGroups(type: Test) {
     if (project.hasProperty('target')) {
         systemProperty 'target', "&(target)"
     }
-    if (project.hasProperty('verifyUI')) {
-        systemProperty 'verifyUI', "&(verifyUI)"
-    }
+}
+
+tasks.withType(Test) {
+    scanForTestClasses = false
+    include "**/*Test.class" // whatever Ant pattern matches your test class files
 }
 
 //task testContacts(type: Test) {
@@ -42,8 +42,5 @@ task testGroups(type: Test) {
 //    }
 //    if (project.hasProperty('target')) {
 //        systemProperty 'target', "&(target)"
-//    }
-//    if (project.hasProperty('verifyUI')) {
-//        systemProperty 'verifyUI', "&(verifyUI)"
 //    }
 //}

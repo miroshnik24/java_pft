@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.addressbook.model.GroupData;
 import ru.stqa.addressbook.model.Groups;
-//import sun.util.logging.resources.logging_es;
+import sun.util.logging.resources.logging_es;
 
 import java.io.*;
 import java.nio.Buffer;
@@ -34,7 +34,7 @@ public class GroupCreationTests extends TestBase {
       }
       XStream xstream = new XStream();
       xstream.processAnnotations(GroupData.class);
-     // xstream.allowTypes(new Class[]{GroupData.class});
+      xstream.allowTypes(new Class[]{GroupData.class});
       List<GroupData> groups = (List<GroupData>) xstream.fromXML(xml);
       return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
@@ -59,10 +59,10 @@ public class GroupCreationTests extends TestBase {
   @Test (dataProvider = "validGroupsFromJson")
   public void testGroupCreation(GroupData group) {
     app.goTo().groupPage();
-    Groups before = app.db().groups();
+    Groups before = app.group().all();
     app.group().create(group);
     assertThat(app.group().count(), equalTo(before.size() + 1));
-    Groups after = app.db().groups();
+    Groups after = app.group().all();
     assertThat(after, equalTo(
             before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
   }
@@ -70,12 +70,11 @@ public class GroupCreationTests extends TestBase {
   @Test (enabled = false)
   public void testBadGroupCreation() {
     app.goTo().groupPage();
-    Groups before = app.db().groups();
+    Groups before = app.group().all();
     GroupData group = new GroupData().withName("test2'");
     app.group().create(group);
     assertThat(app.group().count(), equalTo(before.size()));
-    Groups after = app.db().groups();
+    Groups after = app.group().all();
     assertThat(after, equalTo(before));
-    verifyGroupListInUI();
   }
 }
