@@ -1,46 +1,49 @@
 apply plugin: 'java'
 
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'com.slickqa:testng:7.0.0-7'
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.0'
-    implementation 'org.hamcrest:hamcrest-junit:2.0.0.0'
-    implementation 'com.beust:jcommander:1.82'
-    implementation 'com.thoughtworks.xstream:xstream:1.4.19'
-    implementation 'com.google.code.gson:gson:2.10'
-    implementation 'ch.qos.logback:logback-classic:1.4.5'
+    compile 'org.testng:testng:6.11'
+    compile 'org.seleniumhq.selenium:selenium-java:3.5.3'
+    compile 'org.hamcrest:java-hamcrest:2.0.0.0'
+    compile 'com.beust:jcommander:1.72'
+    compile 'com.thoughtworks.xstream:xstream:1.4.10'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'mysql:mysql-connector-java:5.1.38'
+    compile 'org.hibernate:hibernate-core:5.2.11.Final'
+    compile 'info.cukes:cucumber-java:1.2.5'
+    compile 'info.cukes:cucumber-testng:1.2.5'
 }
 
-
 task testGroups(type: Test) {
-    useTestNG() {
+    useTestNG {
         suites 'src/test/resources/testng-groups.xml'
     }
     if (project.hasProperty('browser')) {
-        systemProperty 'browser', "&(browser)"
+        systemProperty 'browser', "${browser}"
     }
     if (project.hasProperty('target')) {
-        systemProperty 'target', "&(target)"
+        systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('verifyUI')) {
+        systemProperty 'verifyUI', "${verifyUI}"
     }
 }
 
-tasks.withType(Test) {
-    scanForTestClasses = false
-    include "**/*Test.class" // whatever Ant pattern matches your test class files
+task testContacts(type: Test) {
+    useTestNG {
+        suites 'src/test/resources/testng-contacts.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('verifyUI')) {
+        systemProperty 'verifyUI', "${verifyUI}"
+    }
 }
-
-//task testContacts(type: Test) {
-//    useTestNG() {
-//        suites 'src/test/resources/testng-contacts.xml'
-//    }
-//    if (project.hasProperty('browser')) {
-//        systemProperty 'browser', "&(browser)"
-//    }
-//    if (project.hasProperty('target')) {
-//        systemProperty 'target', "&(target)"
-//    }
-//}

@@ -1,0 +1,14 @@
+<list>
+  <contact>
+    <firstname>firstname 0</firstname>
+    <middlename>middlename 0</middlename>
+    <lastname>lastname 0</lastname>
+    <addres>address 0</addres>
+    <homephone>221-65-52</homephone>
+    <mobilephone>89185555550</mobilephone>
+    <workPhone>456-55-51</workPhone>
+    <email>email0.ru</email>
+    <email2>email20.ru</email2>
+    <email3>email30.ru</email3>
+  </contact>
+</list>
