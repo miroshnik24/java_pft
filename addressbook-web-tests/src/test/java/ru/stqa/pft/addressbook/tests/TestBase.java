@@ -60,7 +60,8 @@ public class TestBase {
             Contacts dbContacts = app.db().contacts();
             Contacts uiContacts = app.contact().all();
             assertThat(uiContacts, equalTo(dbContacts.stream()
-                    .map((c) -> new ContactData(c.getId(), c.getFirstname(), null, c.getLastname(), c.getAddres(), null, null, null, null,
+                    .map((c) -> new ContactData(c.getId(), c.getFirstname(), null, c.getLastname(), c.getAddres()
+                            , null, null, null, null, null,
                             null, null, null))
                     .collect(Collectors.toSet())));
         }
@@ -71,7 +72,8 @@ public class TestBase {
             Contacts dbContacts = group.getContacts();
             Contacts uiContacts = app.contact().all();
             assertThat(uiContacts, equalTo(dbContacts.stream()
-                    .map((c) -> new ContactData(c.getId(), c.getFirstname(), null, c.getLastname(), c.getAddres(), null, null, null, null,
+                    .map((c) -> new ContactData(c.getId(), c.getFirstname(), null, c.getLastname(), c.getAddres()
+                            , null, null, null, null, null,
                             null, null, null))
                     .collect(Collectors.toSet())));
         }

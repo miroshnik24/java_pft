@@ -70,7 +70,7 @@ public class ContactDataGenerator extends TestBase {
         Groups groups = app.db().groups();
         for (int i = 0; i < count; i++) {
             contacts.add(new ContactData(String.format("firstname %s", i),String.format("middlename %s", i),String.format("lastname %s", i), String.format("address %s", i), "221-65-52",
-                    "89185555550","456-55-51", String.format("email%s.ru", i), String.format("email2%s.ru", i), String.format("email3%s.ru", i), null));
+                    "89185555550", "444444", "456-55-51", String.format("email%s.ru", i), String.format("email2%s.ru", i), String.format("email3%s.ru", i), null));
         }
         return contacts;
     }

@@ -3,11 +3,14 @@ package ru.stqa.pft.addressbook.model;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
+import ru.stqa.pft.addressbook.tests.ContactInfoTest;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @XStreamAlias("contact")
 @Entity
@@ -39,6 +42,10 @@ public class ContactData {
     @Type(type = "text")
     private final String mobilephone;
 
+    @Column(name = "phone2")
+    @Type(type = "text")
+    private final String phone2;
+
     @Column(name = "work")
     @Type(type = "text")
     private final String workPhone;
@@ -68,7 +75,8 @@ public class ContactData {
     @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
     private Set<GroupData> groups = new HashSet<GroupData>();
 
-    public ContactData(int id, String firstname, String middlename, String lastname, String addres, String homephone, String mobilephone, String workPhone, String email, String email2,
+    public ContactData(int id, String firstname, String middlename, String lastname, String addres, String homephone
+            , String mobilephone, String phone2, String workPhone, String email, String email2,
                        String email3, File photo) {
         this.id = id;
         this.firstname = firstname;
@@ -77,6 +85,7 @@ public class ContactData {
         this.addres = addres;
         this.homephone = homephone;
         this.mobilephone = mobilephone;
+        this.phone2 = phone2;
         this.workPhone = workPhone;
         this.email = email;
         this.email2 = email2;
@@ -86,8 +95,9 @@ public class ContactData {
         this.photo = photo;
     }
 
-    public ContactData(String firstname, String middlename, String lastname, String addres, String homephone, String mobilephone, String workPhone, String email, String email2,
-                        String email3, File photo) {
+    public ContactData(String firstname, String middlename, String lastname, String addres, String homephone, String mobilephone, String phone2, String workPhone, String email, String email2,
+                       String email3, File photo) {
+        this.phone2 = phone2;
         this.id = 0;
         this.firstname = firstname;
         this.middlename = middlename;
@@ -105,6 +115,7 @@ public class ContactData {
     }
 
     public ContactData() {
+        this.phone2 = null;
         this.firstname = null;
         this.middlename = null;
         this.lastname = null;
@@ -142,6 +153,10 @@ public class ContactData {
 
     public String getMobilephone() {
         return mobilephone;
+    }
+
+    public String getPhone2() {
+        return phone2;
     }
 
     public String getWorkPhone() {
@@ -215,6 +230,7 @@ public class ContactData {
                 ", homephone='" + homephone + '\'' +
                 ", mobilephone='" + mobilephone + '\'' +
                 ", workPhone='" + workPhone + '\'' +
+                ", phone2='" + phone2 + '\'' +
                 ", email='" + email + '\'' +
                 ", email2='" + email2 + '\'' +
                 ", email3='" + email3 + '\'' +
@@ -236,6 +252,7 @@ public class ContactData {
         if (homephone != null ? !homephone.equals(that.homephone) : that.homephone != null) return false;
         if (mobilephone != null ? !mobilephone.equals(that.mobilephone) : that.mobilephone != null) return false;
         if (workPhone != null ? !workPhone.equals(that.workPhone) : that.workPhone != null) return false;
+        if (phone2 != null ? !phone2.equals(that.phone2) : that.phone2 != null) return false;
         if (email != null ? !email.equals(that.email) : that.email != null) return false;
         if (email2 != null ? !email2.equals(that.email2) : that.email2 != null) return false;
         return email3 != null ? email3.equals(that.email3) : that.email3 == null;
@@ -251,9 +268,23 @@ public class ContactData {
         result = 31 * result + (homephone != null ? homephone.hashCode() : 0);
         result = 31 * result + (mobilephone != null ? mobilephone.hashCode() : 0);
         result = 31 * result + (workPhone != null ? workPhone.hashCode() : 0);
+        result = 31 * result + (phone2 != null ? phone2.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (email2 != null ? email2.hashCode() : 0);
         result = 31 * result + (email3 != null ? email3.hashCode() : 0);
         return result;
+    }
+
+    public String mergePhones() {
+        return Arrays.asList(getHomephone(), getMobilephone(), getWorkPhone(), getPhone2())
+                .stream().filter((s) -> ! s.equals(""))
+                .map( ContactInfoTest::cleaned)
+                .collect( Collectors.joining("\n"));
+    }
+
+    public String mergeEmails() {
+        return Arrays.asList(getEmail(), getEmail2(), getEmail3())
+                .stream().filter((s) -> ! s.equals(""))
+                .collect(Collectors.joining("\n"));
     }
 }

@@ -17,7 +17,8 @@ public class ContactDeletionTest extends TestBase {
         if (app.db().contacts().size() == 0) {
             Groups groups = app.db().groups();
             app.goTo().HomePage();
-            app.contact().create(new ContactData("Иван", "Васильевич", "Иванов", null, "221-65-52", "89185555550","456-55-51",
+            app.contact().create(new ContactData("Иван", "Васильевич", "Иванов", null
+                    , "221-65-52", "89185555550", "3333333", "456-55-51",
                              "1.ru", "2.ru", "3.ru", null),true, groups.iterator().next().getName());
             app.goTo().HomePage();
         }
