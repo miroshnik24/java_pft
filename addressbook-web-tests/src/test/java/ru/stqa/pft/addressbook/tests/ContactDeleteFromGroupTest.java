@@ -14,6 +14,11 @@ public class ContactDeleteFromGroupTest extends TestBase{
 
     @BeforeMethod
     public void ensurePreconditions() {
+        if (app.db().groups().size() == 0) {
+        app.goTo().GroupPage();
+        app.group().create(new GroupData("test1", "test2", "test3"));
+        app.goTo().returnToGroupPage();
+    }
         if (app.db().contacts().size() == 0) {
             Groups groups = app.db().groups();
             app.goTo().HomePage();
@@ -21,15 +26,7 @@ public class ContactDeleteFromGroupTest extends TestBase{
                     "1.ru", "2.ru", "3.ru",null),true, groups.iterator().next().getName());
             app.goTo().HomePage();
         }
-
-        if (app.db().groups().size() == 0) {
-            app.goTo().GroupPage();
-            app.group().create(new GroupData("test1", "test2", "test3"));
-            app.goTo().returnToGroupPage();
-        }
-
-
-
+        
     }
 
     @Test
