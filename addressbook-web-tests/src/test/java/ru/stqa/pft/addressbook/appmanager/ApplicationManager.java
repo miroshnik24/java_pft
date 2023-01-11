@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -30,25 +32,48 @@ public class ApplicationManager {
         properties = new Properties();
         }
 
-    public void init() throws IOException {
+//    public void init() throws IOException {
+//        String target = System.getProperty("target", "local");
+//        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+//
+//        if (browser.equals(BrowserType.FIREFOX)) {
+//            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+//        } else if (browser.equals(BrowserType.CHROME)) {
+//            wd = new ChromeDriver();
+//        } else if (browser.equals(BrowserType.IE)) {
+//            wd = new InternetExplorerDriver();
+//        }
+//        wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//        wd.get(properties.getProperty("web.baseUrl"));
+//        groupHelper = new GroupHelper(wd);
+//        navigationHelper = new NavigationHelper(wd);
+//        sessionHelper = new SessionHelper(wd);
+//        contactHelper = new ContactHelper(wd);
+//        sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+//        dbHelper = new DbHelper();
+//    }
+
+    public void init() throws IOException
+    {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
+        dbHelper = new DbHelper();
+
         if (browser.equals(BrowserType.FIREFOX)) {
-            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+            wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
         } else if (browser.equals(BrowserType.CHROME)) {
             wd = new ChromeDriver();
-        } else if (browser.equals(BrowserType.IE)) {
-            wd = new InternetExplorerDriver();
+        } else if (browser.equals(BrowserType.EDGE)) {
+            wd = new EdgeDriver();
         }
         wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         wd.get(properties.getProperty("web.baseUrl"));
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
-        sessionHelper = new SessionHelper(wd);
+        SessionHelper sessionHelper = new SessionHelper(wd);
         contactHelper = new ContactHelper(wd);
         sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
-        dbHelper = new DbHelper();
     }
 
     public void stop() {

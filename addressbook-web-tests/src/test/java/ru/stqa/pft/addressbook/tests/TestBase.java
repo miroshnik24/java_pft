@@ -22,7 +22,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class TestBase {
 
-    protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
+    protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.FIREFOX));
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @BeforeSuite
