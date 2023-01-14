@@ -141,8 +141,8 @@ public class ContactHelper extends HelperBase {
         String email3 = wd.findElement(By.name("email3")).getAttribute("value");
 
         wd.navigate().back();
-        return new ContactData(contact.getId(), firstname, null, lastname, address, homePhone, mobilePhome
-                , workPhone, phone2, email, email2, email3, null);
+        return new ContactData(contact.getId(), firstname, null, lastname, address, homePhone, mobilePhome,
+                phone2, workPhone, email, email2, email3, null);
 
 //        return new ContactData().withFirstName(firstName).withLastName(lastName)
 //                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withPhone2(phone2).withAddress(address)

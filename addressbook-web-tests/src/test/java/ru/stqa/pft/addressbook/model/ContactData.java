@@ -95,9 +95,8 @@ public class ContactData {
         this.photo = photo;
     }
 
-    public ContactData(String firstname, String middlename, String lastname, String addres, String homephone, String mobilephone, String phone2, String workPhone, String email, String email2,
-                       String email3, File photo) {
-        this.phone2 = phone2;
+    public ContactData(String firstname, String middlename, String lastname, String addres, String homephone
+            , String mobilephone, String phone2, String workPhone, String email, String email2, String email3, File photo) {
         this.id = 0;
         this.firstname = firstname;
         this.middlename = middlename;
@@ -105,6 +104,7 @@ public class ContactData {
         this.addres = addres;
         this.homephone = homephone;
         this.mobilephone = mobilephone;
+        this.phone2 = phone2;
         this.workPhone = workPhone;
         this.email = email;
         this.email2 = email2;
@@ -115,13 +115,13 @@ public class ContactData {
     }
 
     public ContactData() {
-        this.phone2 = null;
         this.firstname = null;
         this.middlename = null;
         this.lastname = null;
         this.addres = null;
         this.homephone = null;
         this.mobilephone = null;
+        this.phone2 = null;
         this.workPhone = null;
         this.email = null;
         this.email2 = null;
@@ -229,8 +229,8 @@ public class ContactData {
                 ", addres='" + addres + '\'' +
                 ", homephone='" + homephone + '\'' +
                 ", mobilephone='" + mobilephone + '\'' +
-                ", workPhone='" + workPhone + '\'' +
                 ", phone2='" + phone2 + '\'' +
+                ", workPhone='" + workPhone + '\'' +
                 ", email='" + email + '\'' +
                 ", email2='" + email2 + '\'' +
                 ", email3='" + email3 + '\'' +
@@ -251,8 +251,8 @@ public class ContactData {
         if (addres != null ? !addres.equals(that.addres) : that.addres != null) return false;
         if (homephone != null ? !homephone.equals(that.homephone) : that.homephone != null) return false;
         if (mobilephone != null ? !mobilephone.equals(that.mobilephone) : that.mobilephone != null) return false;
-        if (workPhone != null ? !workPhone.equals(that.workPhone) : that.workPhone != null) return false;
         if (phone2 != null ? !phone2.equals(that.phone2) : that.phone2 != null) return false;
+        if (workPhone != null ? !workPhone.equals(that.workPhone) : that.workPhone != null) return false;
         if (email != null ? !email.equals(that.email) : that.email != null) return false;
         if (email2 != null ? !email2.equals(that.email2) : that.email2 != null) return false;
         return email3 != null ? email3.equals(that.email3) : that.email3 == null;
@@ -267,8 +267,8 @@ public class ContactData {
         result = 31 * result + (addres != null ? addres.hashCode() : 0);
         result = 31 * result + (homephone != null ? homephone.hashCode() : 0);
         result = 31 * result + (mobilephone != null ? mobilephone.hashCode() : 0);
-        result = 31 * result + (workPhone != null ? workPhone.hashCode() : 0);
         result = 31 * result + (phone2 != null ? phone2.hashCode() : 0);
+        result = 31 * result + (workPhone != null ? workPhone.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (email2 != null ? email2.hashCode() : 0);
         result = 31 * result + (email3 != null ? email3.hashCode() : 0);
@@ -276,7 +276,7 @@ public class ContactData {
     }
 
     public String mergePhones() {
-        return Arrays.asList(getHomephone(), getMobilephone(), getWorkPhone(), getPhone2())
+        return Arrays.asList(getHomephone(), getMobilephone(), getPhone2(), getWorkPhone())
                 .stream().filter((s) -> ! s.equals(""))
                 .map( ContactInfoTest::cleaned)
                 .collect( Collectors.joining("\n"));
