@@ -19,25 +19,57 @@ public class ContactHelper extends HelperBase {
         super(wd);
     }
 
+//    public void fillContactForm(ContactData contactData, boolean creation) {
+//        type(By.name("firstname"), contactData.getFirstname());
+//        type(By.name("middlename"), contactData.getMiddlename());
+//        type(By.name("lastname"), contactData.getLastname());
+//        type(By.name("address"), contactData.getAddres());
+//        type(By.name("home"), contactData.getHomephone());
+//        type(By.name("mobile"), contactData.getMobilephone());
+//        type(By.name("work"), contactData.getWorkPhone());
+//        type(By.name("email"), contactData.getEmail());
+//        type(By.name("email2"), contactData.getEmail2());
+//        type(By.name("email3"), contactData.getEmail3());
+//        attach(By.name("photo"), contactData.getPhoto());
+//
+//        if (creation) {
+//                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(group);
+//            } else {
+//                Assert.assertFalse(isElementPresent(By.name("new_group")));
+//            }
+//        }
+
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("middlename"), contactData.getMiddlename());
         type(By.name("lastname"), contactData.getLastname());
+        //type(By.name("nickname"), contactData.getNick());
+        //type(By.name("title"), contactData.getTitle());
+        //type(By.name("company"), contactData.getCompany());
         type(By.name("address"), contactData.getAddres());
         type(By.name("home"), contactData.getHomephone());
         type(By.name("mobile"), contactData.getMobilephone());
         type(By.name("work"), contactData.getWorkPhone());
+       // type(By.name("fax"), contactData.getFax());
         type(By.name("email"), contactData.getEmail());
         type(By.name("email2"), contactData.getEmail2());
         type(By.name("email3"), contactData.getEmail3());
-        attach(By.name("photo"), contactData.getPhoto());
+       // type(By.name("homepage"), contactData.getSite());
+        //type(By.name("address2"), contactData.getSecondaryAddress());
+        type(By.name("phone2"), contactData.getPhone2());
+        //type(By.name("notes"), contactData.getNotes());
+
+
 
         if (creation) {
-                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(group);
-            } else {
-                Assert.assertFalse(isElementPresent(By.name("new_group")));
+            if (contactData.getGroups().size() > 0) {
+                Assert.assertTrue(contactData.getGroups().size() == 1);
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
             }
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
+    }
 
     public void initContactCreation() {
         click(By.linkText("add new"));
