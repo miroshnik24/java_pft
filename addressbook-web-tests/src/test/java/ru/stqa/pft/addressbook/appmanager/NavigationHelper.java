@@ -35,5 +35,7 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("group page \"" + name + "\""));
     }
 
-
+    public void groupPage(GroupData group) {
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText(group.getName());
+    }
 }
