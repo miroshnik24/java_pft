@@ -19,14 +19,14 @@ public class ContactDeleteFromGroupTest extends TestBase{
         app.group().create(new GroupData("test1", "test2", "test3"));
         app.goTo().returnToGroupPage();
     }
-        if (app.db().contacts().size() == 0) {
-            Groups groups = app.db().groups();
-            app.goTo().HomePage();
-            app.contact().create(new ContactData("Иван", "Васильевич", "Иванов", null
-                    , "221-65-52", "89185555550", "22222222", "456-55-51",
-                    "1.ru", "2.ru", "3.ru",null),true, groups.iterator().next().getName());
-            app.goTo().HomePage();
-        }
+//        if (app.db().contacts().size() == 0) {
+//            Groups groups = app.db().groups();
+//            app.goTo().HomePage();
+//            app.contact().create(new ContactData("Иван", "Васильевич", "Иванов", null
+//                    , "221-65-52", "89185555550", "22222222", "456-55-51",
+//                    "1.ru", "2.ru", "3.ru",null),true, groups.iterator().next().getName());
+//            app.goTo().HomePage();
+//        }
 
     }
 
