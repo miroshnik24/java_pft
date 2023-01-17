@@ -16,7 +16,7 @@ public class ContactInfoTest extends TestBase {
             Groups groups = app.db().groups();
             app.contact().create(new ContactData("Тест", "Тест2", "Тест3", null
                     , "221-65-52", "800000000", "1111111", "000-00-00",
-                             "Email1", "Email2", "Email3", null),true, groups.iterator().next().getName());
+                             "Email1", "Email2", "Email3", null) );
             app.goTo().HomePage();
         }
 

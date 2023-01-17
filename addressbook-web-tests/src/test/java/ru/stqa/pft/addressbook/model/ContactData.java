@@ -22,13 +22,13 @@ public class ContactData {
     private int id;
 
     @Column(name = "firstname")
-    private final String firstname;
+    private String firstname;
 
     @Column(name = "middlename")
     private final String middlename;
 
     @Column(name = "lastname")
-    private final String lastname;
+    private String lastname;
 
     @Column(name = "address")
     @Type(type = "text")
@@ -286,5 +286,15 @@ public class ContactData {
         return Arrays.asList(getEmail(), getEmail2(), getEmail3())
                 .stream().filter((s) -> ! s.equals(""))
                 .collect(Collectors.joining("\n"));
+    }
+
+  public ContactData withFirstName(String firstname) {
+      this.firstname = firstname;
+      return this;
+  }
+
+    public ContactData withLastName(String lastname) {
+        this.lastname = lastname;
+        return this;
     }
 }

@@ -11,6 +11,8 @@ import static org.testng.Assert.assertEquals;
 
 public class GroupModificationTest extends TestBase {
 
+    private GroupData group;
+
     @BeforeMethod
     public void ensurePreconditions() {
         Groups g = app.db().groups();

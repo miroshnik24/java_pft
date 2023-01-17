@@ -5,10 +5,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.remote.BrowserType;
-import org.testng.Assert;
 import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
@@ -42,7 +39,7 @@ public class GroupStepDefinitions {
     }
 
     @When("^I create a new group whith name (.+), header (.+) and footer (.+)$")
-    public void createGroups(String name, String header, String footer) {
+    public void createGroups(String name, String header, String footer, GroupData group) {
         newGroup = new GroupData(name, header, footer);
         app.goTo().GroupPage();
         app.group().create(newGroup);

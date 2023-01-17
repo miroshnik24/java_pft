@@ -11,6 +11,8 @@ import static org.testng.Assert.assertEquals;
 
 public class GroupDeletionTest extends TestBase {
 
+    private GroupData group;
+
     @BeforeMethod
     public void ensurePreconditions() {
         if (app.db().groups().size() == 0) {

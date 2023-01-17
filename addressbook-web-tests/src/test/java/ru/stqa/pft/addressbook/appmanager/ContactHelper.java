@@ -13,11 +13,13 @@ import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
+    private String group;
+
     public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
-    public void fillContactForm(ContactData contactData, boolean creation, String group) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("middlename"), contactData.getMiddlename());
         type(By.name("lastname"), contactData.getLastname());
@@ -54,16 +56,16 @@ public class ContactHelper extends HelperBase {
         wd.switchTo().alert().accept();
     }
 
-    public void create(ContactData contact, boolean b, String group) {
+    public void create(ContactData contact) {
         initContactCreation();
-        fillContactForm(contact, true, group);
+        fillContactForm(contact, true );
         submitCreation();
         contactCache = null;
     }
 
     public void modify(ContactData contact) {
         initContactModificationById(contact.getId());
-        fillContactForm(contact, false, null);
+        fillContactForm(contact, false );
         submitModification();
         contactCache = null;
     }
@@ -147,5 +149,44 @@ public class ContactHelper extends HelperBase {
 //        return new ContactData().withFirstName(firstName).withLastName(lastName)
 //                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withPhone2(phone2).withAddress(address)
 //                .withEmail(email).withEmail2(email2).withEmail3(email3);
+    }
+
+    public void create(ContactData contact, boolean b) {
+        //*create();
+        fillContactForm(contact, b);
+        submitContactCreation();
+        contactCache = null;
+        goToHomePage();
+    }
+
+    public void submitContactCreation() {
+        click(By.xpath("//div[@id='content']/form/input[21]"));
+    }
+
+    public void goToHomePage() {
+        click(By.linkText("home"));
+    }
+
+    public void addContactToGroup(ContactData contact, GroupData group) {
+        selectContactById(contact.getId());
+        selectGroupInList(group.getName());
+        initAddToGroup();
+    }
+
+    private void initAddToGroup() {
+        wd.findElement(By.name("add")).click();
+    }
+
+    private void selectGroupInList(String groupName) {
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(groupName);
+    }
+
+    public void deleteContactFromGroup(ContactData contact) {
+        selectContactById(contact.getId());
+        initDeletingFromGrop();
+    }
+
+    private void initDeletingFromGrop() {
+        wd.findElement(By.name("remove")).click();
     }
 }

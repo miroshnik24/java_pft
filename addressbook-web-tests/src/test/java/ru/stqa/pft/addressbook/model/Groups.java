@@ -39,4 +39,7 @@ public class Groups extends ForwardingSet<GroupData> {
         groups.remove(group);
         return groups;
     }
+
+//    public <T> T withOut(GroupData groupByName) {
+//    }
 }

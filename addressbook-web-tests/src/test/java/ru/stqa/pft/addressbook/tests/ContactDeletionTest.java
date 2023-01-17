@@ -19,7 +19,7 @@ public class ContactDeletionTest extends TestBase {
             app.goTo().HomePage();
             app.contact().create(new ContactData("Иван", "Васильевич", "Иванов", null
                     , "221-65-52", "89185555550", "3333333", "456-55-51",
-                             "1.ru", "2.ru", "3.ru", null),true, groups.iterator().next().getName());
+                             "1.ru", "2.ru", "3.ru", null) );
             app.goTo().HomePage();
         }
     }
