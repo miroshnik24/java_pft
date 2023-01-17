@@ -275,9 +275,17 @@ public class ContactData {
         return result;
     }
 
-    public String mergePhones() {
-        return Arrays.asList(getHomephone(), getMobilephone(), getPhone2(), getWorkPhone())
-                .stream().filter((s) -> ! s.equals(""))
+//    public String mergePhones() {
+//        return Arrays.asList(getHomephone(), getMobilephone(), getPhone2(), getWorkPhone())
+//                .stream().filter((s) -> ! s.equals(""))
+//                .map( ContactInfoTest::cleaned)
+//                .collect( Collectors.joining("\n"));
+//    }
+
+    public String mergePhones()
+    {
+        return Arrays.asList(getHomephone(), getMobilephone(), getWorkPhone(), getPhone2())
+                .stream().filter((s) -> !s.equals(""))
                 .map( ContactInfoTest::cleaned)
                 .collect( Collectors.joining("\n"));
     }

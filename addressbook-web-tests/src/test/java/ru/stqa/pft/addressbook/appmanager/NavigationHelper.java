@@ -38,4 +38,8 @@ public class NavigationHelper extends HelperBase {
     public void groupPage(GroupData group) {
         new Select(wd.findElement(By.name("group"))).selectByVisibleText(group.getName());
     }
+
+    public void AddNewPage() {
+        click(By.linkText("add new"));
+    }
 }
